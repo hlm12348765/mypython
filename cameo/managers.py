@@ -86,7 +86,7 @@ class CaptureManager(object):
 
         # Write to the image file, if any.
         if self.isWritingImage:
-            cv2.imwrite(self._imageFilename, self._frame)
+            cv2.imwrite(self._imageFilename, mirroredFrame)
             self._imageFilename = None
 
         # Write to the video file, if any.
