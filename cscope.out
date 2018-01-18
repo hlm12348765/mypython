@@ -1,0 +1,8715 @@
+cscope 15 $HOME/mygit/mypython               0000058626
+	@.git/HEAD
+
+1 
+	g»f
+: 
+»fs
+/
+h—ds
+/
+ma¡”
+
+
+	@.git/config
+
+1 [
+cÜe
+]
+
+2 
+	g»pos™ÜyfÜm©v”siÚ
+ = 0
+
+3 
+femode
+ = 
+Œue
+
+
+4 
+b¬e
+ = 
+çl£
+
+
+5 
+log®Ìefupd©es
+ = 
+Œue
+
+
+6 [
+»mÙe
+ "origin"]
+
+7 
+u¾
+ = 
+h‰ps
+:
+
+8 
+ãtch
+ = +
+»fs
+/
+h—ds
+
+
+	@.git/description
+
+1 
+UÂamed
+ 
+	g»pos™Üy
+; 
+ed™
+ 
+this
+ 
+	gfe
+ 'desütiÚ' 
+to
+ 
+Çme
+ 
+the
+„epository.
+
+	@.git/hooks/applypatch-msg.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+check
+ 
+the
+ 
+comm™
+ 
+log
+ 
+mes§ge
+ 
+k’
+ 
+by
+
+
+4 #­¶y·tch 
+äom
+ 
+ª
+ 
+e
+-
+ma
+ 
+mes§ge
+.
+
+5 #
+#Th
+hook
+ 
+should
+ 
+ex™
+ 
+w™h
+ 
+nÚ
+-
+z”o
+ 
+¡©us
+ 
+aá”
+ 
+issušg
+ 
+ª
+
+
+7 #­´İrŸ‹ 
+mes§ge
+ 
+™
+ 
+wªts
+ 
+to
+ 
+¡İ
+ 
+the
+ 
+comm™
+. 
+The
+ 
+hook
+ 
+is
+
+
+8 #®lowed 
+to
+ 
+ed™
+ 
+the
+ 
+comm™
+ 
+mes§ge
+ 
+fe
+.
+
+9 #
+#TØ
+’abË
+ 
+this
+ 
+hook
+, 
+»Çme
+hi 
+fe
+ 
+to
+ "applypatch-msg".
+
+12 . 
+	gg™
+-
+	gsh
+-
+£tup
+
+
+13 
+	g‹¡
+ -
+	gx
+ "$GIT_DIR/hooks/commit-msg" &&
+
+14 
+	gexec
+ "$GIT_DIR/hooks/comm™-msg" 
+	g$
+{1+"$@"}
+
+	@.git/hooks/commit-msg.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+check
+ 
+the
+ 
+comm™
+ 
+log
+ 
+mes§ge
+.
+
+4 #C®Ëd 
+by
+ "g™ comm™" 
+w™h
+ 
+Úe
+ 
+¬gum’t
+, 
+the
+ 
+Çme
+ 
+of
+h
+fe
+
+
+5 #th© 
+has
+ 
+the
+ 
+comm™
+ 
+mes§ge
+. 
+The
+ 
+hook
+ 
+should
+ 
+ex™
+ 
+w™h
+ 
+nÚ
+-
+z”o
+
+
+6 #¡©u 
+aá”
+ 
+issušg
+ 
+ª
+ 
+­´İrŸ‹
+ 
+mes§ge
+ 
+™
+ 
+wªts
+ 
+to
+ 
+¡İ
+ 
+the
+
+
+7 #comm™. 
+The
+ 
+hook
+ 
+is
+ 
+®lowed
+ 
+to
+ 
+ed™
+ 
+the
+ 
+comm™
+ 
+mes§ge
+ 
+fe
+.
+
+8 #
+#TØ
+’abË
+ 
+this
+ 
+hook
+, 
+»Çme
+hi 
+fe
+ 
+to
+ "commit-msg".
+
+11 #Uncomm’ˆ
+the
+ 
+b–ow
+ 
+to
+ 
+add
+ 
+a
+ 
+SigÃd
+-
+off
+-
+by
+ 
+lše
+Øth
+mes§ge
+.
+
+12 #Došg 
+this
+ 
+š
+ 
+a
+ 
+hook
+ 
+is
+‡ 
+bad
+ 
+id—
+ iÀ
+g’”®
+, 
+but
+ 
+the
+ 
+´•¬e
+-
+comm™
+-
+msg
+
+
+13 #hook 
+is
+ 
+mÜe
+ 
+su™ed
+ 
+to
+ 
+™
+.
+
+14 #
+#SOB=
+$
+(
+g™
+ 
+v¬
+ 
+GIT_AUTHOR_IDENT
+ | 
+£d
+ -
+n
+ 's/^\(.*>\).*$/Signed-off-by: \1/p')
+
+16 #g»°-
+qs
+ "^$SOB" "$1" || 
+echo
+ "$SOB" >> "$1"
+
+18 #Thi 
+exam¶e
+ 
+ÿtches
+ 
+du¶iÿ‹
+ 
+SigÃd
+-
+off
+-
+by
+ 
+lšes
+.
+
+20 
+	g‹¡
+ "" = "$(g»°'^SigÃd-off-by: ' "
+$1
+" |
+
+21 
+sÜt
+ | 
+uniq
+ -
+c
+ | 
+£d
+ -
+e
+ '/^[ ]*1[ ]/d')" || {
+
+22 
+echo
+ >&2 
+Du¶iÿ‹
+ 
+SigÃd
+-
+off
+-
+by
+ 
+lšes
+.
+
+23 
+ex™
+ 1
+
+	@.git/hooks/post-update.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+´•¬e
+ 
+a
+ 
+·cked
+ 
+»pos™Üy
+ 
+u£
+ 
+ov”
+
+
+4 #dumb 
+Œª¥Üts
+.
+
+5 #
+#TØ
+’abË
+ 
+this
+ 
+hook
+, 
+»Çme
+hi 
+fe
+ 
+to
+ "post-update".
+
+8 
+exec
+ 
+g™
+ 
+	gupd©e
+-
+	g£rv”
+-
+	gšfo
+
+
+	@.git/hooks/pre-applypatch.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+v”ify
+ 
+wh©
+ 
+is
+ 
+about
+Ø
+be
+ 
+comm™‹d
+
+
+4 #by 
+­¶y·tch
+ 
+äom
+ 
+ª
+ 
+e
+-
+ma
+ 
+mes§ge
+.
+
+5 #
+#Th
+hook
+ 
+should
+ 
+ex™
+ 
+w™h
+ 
+nÚ
+-
+z”o
+ 
+¡©us
+ 
+aá”
+ 
+issušg
+ 
+ª
+
+
+7 #­´İrŸ‹ 
+mes§ge
+ 
+™
+ 
+wªts
+ 
+to
+ 
+¡İ
+ 
+the
+ 
+comm™
+.
+
+8 #
+#TØ
+’abË
+ 
+this
+ 
+hook
+, 
+»Çme
+hi 
+fe
+ 
+to
+ "pre-applypatch".
+
+11 . 
+	gg™
+-
+	gsh
+-
+£tup
+
+
+12 
+	g‹¡
+ -
+	gx
+ "$GIT_DIR/hooks/pre-commit" &&
+
+13 
+	gexec
+ "$GIT_DIR/hooks/´e-comm™" 
+	g$
+{1+"$@"}
+
+	@.git/hooks/pre-commit.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+v”ify
+ 
+wh©
+ 
+is
+ 
+about
+Ø
+be
+ 
+comm™‹d
+.
+
+4 #C®Ëd 
+by
+ "g™ comm™" 
+w™h
+ 
+no
+ 
+¬gum’ts
+. 
+The
+ 
+hook
+ 
+should
+
+
+5 #ex™ 
+w™h
+ 
+nÚ
+-
+z”o
+ 
+¡©us
+ 
+aá”
+ 
+issušg
+ 
+ª
+ 
+­´İrŸ‹
+ 
+mes§ge
+ 
+
+6 #™ 
+wªts
+ 
+to
+ 
+¡İ
+ 
+the
+ 
+comm™
+.
+
+7 #
+#TØ
+’abË
+ 
+this
+ 
+hook
+, 
+»Çme
+hi 
+fe
+ 
+to
+ "pre-commit".
+
+10 
+g™
+ 
+	g»v
+-
+	g·r£
+ --
+v”ify
+ 
+	gHEAD
+ >/
+	gdev
+/
+	gnuÎ
+ 2>&1
+
+11 
+th’
+
+
+12 
+	gagaš¡
+=
+HEAD
+
+
+14 #In™ŸÈ
+comm™
+: 
+diff
+ 
+agaš¡
+ 
+ª
+ 
+em±y
+ 
+Œ“
+ 
+objeù
+
+
+15 
+agaš¡
+=4b825dc642cb6eb9a060e54bf8d69288fbee4904
+
+16 
+fi
+
+
+18 #Ià
+you
+ 
+wªt
+ 
+to
+ 
+®low
+ 
+nÚ
+-
+ASCII
+ 
+f’ames
+ 
+£t
+ 
+this
+ 
+v¬ŸbË
+Ø
+Œue
+.
+
+19 
+®lownÚascii
+=
+$
+(
+g™
+ 
+cÚfig
+ --
+boŞ
+ 
+hooks
+.allownonascii)
+
+21 #Redœeù 
+ouut
+ 
+to
+ 
+¡d”r
+.
+
+22 
+exec
+ 1>&2
+
+24 #Cros 
+¶©fÜm
+ 
+´ojeùs
+ 
+‹nd
+ 
+to
+ 
+avoid
+ 
+nÚ
+-
+ASCII
+ 
+f’ames
+; 
+´ev’t
+
+
+25 #them 
+äom
+ 
+bešg
+ 
+added
+ 
+to
+ 
+the
+ 
+»pos™Üy
+. 
+We
+ 
+ex¶o™
+h
+çù
+ 
+th©
+he
+
+26 #´šbË 
+¿nge
+ 
+¡¬ts
+ 
+©
+ 
+the
+ 
+¥aû
+ 
+ch¬aù”
+ 
+ªd
+ 
+’ds
+ 
+w™h
+ 
+tde
+.
+
+28 #NÙ
+th©
+ 
+the
+ 
+u£
+ 
+of
+ 
+b¿ck‘s
+ 
+¬ound
+ 
+a
+ 
+Œ
+ 
+¿nge
+ 
+is
+ 
+ok
+ 
+h”e
+, (
+™
+'s
+
+29 #ev’ 
+»quœed
+, 
+pÜb™y
+ 
+to
+ 
+SŞ¬is
+ 10's /usr/bin/tr), since
+
+30 #th
+squ¬e
+ 
+b¿ck‘
+ 
+by‹s
+ 
+h­³n
+ 
+to
+ 
+çÎ
+ 
+š
+ 
+the
+ 
+desigÇ‹d
+ 
+¿nge
+.
+
+31 
+‹¡
+ 
+$
+(
+g™
+ 
+diff
+ --
+ÿched
+ --
+Çme
+-
+Úly
+ --diff-
+f‹r
+=
+A
+ -
+z
+ 
+$agaš¡
+ |
+
+32 
+LC_ALL
+=
+C
+ 
+Œ
+ -
+d
+ '[ -~]\0' | 
+wc
+ -
+c
+) != 0
+
+33 
+th’
+
+
+34 
+ÿt
+ <<\
+EOF
+
+
+35 
+E¼Ü
+: 
+A‰em±
+ 
+to
+ 
+add
+ 
+a
+ 
+nÚ
+-
+ASCII
+ 
+fe
+ 
+Çme
+.
+
+37 
+This
+ 
+ÿn
+ 
+ÿu£
+ 
+´obËms
+ 
+you
+ 
+wªt
+ 
+to
+ 
+wÜk
+ 
+w™h
+ 
+³İË
+ 
+Ú
+ 
+Ùh”
+ 
+¶©fÜms
+.
+
+39 
+To
+ 
+be
+ 
+pÜbË
+ 
+™
+ 
+is
+ 
+advi§bË
+ 
+to
+ 
+»Çme
+ 
+the
+ 
+fe
+.
+
+41 
+If
+ 
+you
+ 
+know
+ 
+wh©
+ you 
+¬e
+ 
+došg
+ you 
+ÿn
+ 
+di§bË
+ 
+this
+ 
+check
+ 
+usšg
+:
+
+43 
+g™
+ 
+cÚfig
+ 
+hooks
+.
+®lownÚascii
+ 
+Œue
+
+
+44 
+EOF
+
+
+45 
+ex™
+ 1
+
+46 
+fi
+
+
+48 #Ià
+th”e
+ 
+¬e
+ 
+wh™e¥aû
+ 
+”rÜs
+, 
+´št
+ 
+the
+ 
+ofãndšg
+ 
+fe
+ 
+Çmes
+ 
+ªd
+ 
+ç
+.
+
+49 
+exec
+ 
+g™
+ 
+	gdiff
+-
+	gšdex
+ --
+	gcheck
+ --
+ÿched
+ 
+	g$agaš¡
+ --
+
+	@.git/hooks/pre-push.sample
+
+1 #!/
+bš
+/
+sh
+
+
+3 #AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+v”ify
+ 
+wh©
+ 
+is
+ 
+about
+Ø
+be
+ 
+pushed
+. 
+C®Ëd
+ 
+by
+ "git
+
+5 #pushed. 
+If
+ 
+this
+ 
+süt
+ 
+ex™s
+ 
+w™h
+ 
+a
+ 
+nÚ
+-
+z”o
+ 
+¡©us
+ 
+nÙhšg
+ 
+wl
+ 
+be
+ 
+pushed
+.
+
+6 #
+#Thi 
+hook
+ 
+is
+ 
+ÿÎed
+ 
+w™h
+ 
+the
+ 
+fŞlowšg
+ 
+·¿m‘”s
+:
+
+8 #
+#$1 -- 
+Name
+ 
+of
+ 
+the
+ 
+»mÙe
+ 
+to
+ 
+which
+h
+push
+ 
+is
+ 
+bešg
+ 
+dÚe
+
+
+10 #$2 -- 
+URL
+ 
+to
+ 
+which
+ 
+the
+ 
+push
+ 
+is
+ 
+bešg
+ 
+dÚe
+
+
+11 #
+#Ià
+pushšg
+ 
+w™hout
+ 
+usšg
+ 
+a
+ 
+Çmed
+ 
+»mÙe
+ 
+tho£
+ 
+¬gum’ts
+ 
+wl
+ 
+be
+ 
+equ®
+.
+
+13 #
+#InfÜm©iÚ 
+about
+ 
+the
+ 
+comm™s
+ 
+which
+ 
+¬e
+ 
+bešg
+ 
+pushed
+ 
+is
+ 
+suµl›d
+ 
+as
+ 
+lšes
+ 
+to
+
+
+15 #th
+¡ªd¬d
+ 
+šput
+ 
+š
+ 
+the
+ 
+fÜm
+:
+
+16 #
+#<
+loÿl
+ 
+»f
+> <loÿÈ
+sha1
+> <
+»mÙe
+„ef> <remote sha1>
+
+18 #
+#Thi 
+§m¶e
+ 
+shows
+ 
+how
+ 
+to
+ 
+´ev’t
+ 
+push
+ 
+of
+ 
+comm™s
+ 
+wh”e
+ 
+the
+ 
+log
+ 
+mes§ge
+ 
+¡¬ts
+
+
+20 #w™h "WIP" (
+wÜk
+ 
+š
+ 
+´og»ss
+).
+
+22 
+	g»mÙe
+="$1"
+
+23 
+u¾
+="$2"
+
+25 
+z40
+=0000000000000000000000000000000000000000
+
+27 
+IFS
+=' '
+
+28 
+»ad
+ 
+loÿl_»f
+ 
+loÿl_sha
+ 
+»mÙe_»f
+ 
+»mÙe_sha
+
+
+30 [ "$loÿl_sha" = 
+$z40
+ ]
+
+31 
+th’
+
+
+32 #HªdË 
+d–‘e
+
+
+35 [ "$»mÙe_sha" = 
+$z40
+ ]
+
+36 
+th’
+
+
+37 #New 
+b¿nch
+, 
+examše
+ 
+®l
+ 
+comm™s
+
+
+38 
+	g¿nge
+="$local_sha"
+
+40 #Upd©
+to
+ 
+exi¡šg
+ 
+b¿nch
+, 
+examše
+ 
+Ãw
+ 
+comm™s
+
+
+41 
+	g¿nge
+="$remote_sha..$local_sha"
+
+42 
+fi
+
+
+44 #Check 
+WIP
+ 
+comm™
+
+
+45 
+comm™
+=`
+g™
+ 
+»v
+-
+li¡
+ -
+n
+ 1 --
+g»p
+ '^WIP' "$range"`
+
+46 [ -
+n
+ "$commit" ]
+
+47 
+th’
+
+
+48 
+echo
+ "Found WIP commit in $local_ref,‚ot…ushing"
+
+49 
+ex™
+ 1
+
+50 
+fi
+
+
+51 
+fi
+
+
+52 
+dÚe
+
+
+54 
+ex™
+ 0
+
+	@.git/hooks/pre-rebase.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#Cİyrighˆ(
+c
+è2006, 2008 
+Junio
+ 
+C
+ 
+Hamªo
+
+
+4 #
+#Th"´e-»ba£" 
+hook
+ 
+is
+ 
+run
+ 
+ju¡
+ 
+befÜe
+ "g™„eba£" 
+¡¬ts
+ 
+došg
+
+
+6 #™ 
+job
+, 
+ªd
+ 
+ÿn
+ 
+´ev’t
+ 
+the
+ 
+commªd
+ 
+äom
+ 
+ruÂšg
+ 
+by
+ 
+ex™šg
+ 
+w™h
+
+
+7 #nÚ-
+z”o
+ 
+¡©us
+.
+
+8 #
+#Th
+hook
+ 
+is
+ 
+ÿÎed
+ 
+w™h
+ 
+the
+ 
+fŞlowšg
+ 
+·¿m‘”s
+:
+
+10 #
+#$1 -- 
+the
+ 
+up¡»am
+h
+£r›s
+ 
+was
+ 
+fÜked
+ 
+äom
+.
+
+12 #$2 -- 
+the
+ 
+b¿nch
+ 
+bešg
+ 
+»ba£d
+ (
+Ü
+ 
+em±y
+ 
+wh’
+ 
+»basšg
+h
+cu¼’t
+ branch).
+
+13 #
+#Thi 
+§m¶e
+ 
+shows
+ 
+how
+ 
+to
+ 
+´ev’t
+ 
+tİic
+ 
+b¿nches
+ 
+th©
+ 
+¬e
+ 
+®»ady
+
+
+15 #m”ged 
+to
+ 'Ãxt' 
+b¿nch
+ 
+äom
+ 
+g‘tšg
+ 
+»ba£d
+, 
+beÿu£
+ 
+®lowšg
+ 
+™
+
+
+16 #would 
+»suÉ
+ 
+š
+ 
+»basšg
+ 
+®»ady
+ 
+published
+ 
+hi¡Üy
+.
+
+18 
+	gpublish
+=
+Ãxt
+
+
+19 
+ba£b¿nch
+="$1"
+
+20 
+‹¡
+ "$#" = 2
+
+21 
+th’
+
+
+22 
+tİic
+="refs/heads/$2"
+
+24 
+tİic
+=`
+g™
+ 
+symbŞic
+-
+»f
+ 
+HEAD
+` ||
+
+25 
+ex™
+ 0 ;#wdØ
+nÙ
+ 
+š‹¼u±
+ 
+»basšg
+ 
+d‘ached
+ 
+HEAD
+
+
+26 
+fi
+
+
+28 "$tİic" 
+š
+
+
+29 
+	g»fs
+/
+	gh—ds
+/??
+
+	@.git/hooks/prepare-commit-msg.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+´•¬e
+ 
+the
+ 
+comm™
+ 
+log
+ 
+mes§ge
+.
+
+4 #C®Ëd 
+by
+ "g™ comm™" 
+w™h
+ 
+the
+ 
+Çme
+ 
+of
+h
+fe
+ 
+th©
+ 
+has
+he
+
+5 #comm™ 
+mes§ge
+, 
+fŞlowed
+ 
+by
+ 
+the
+ 
+desütiÚ
+ 
+of
+h
+comm™
+
+
+6 #mes§ge' sourû. Thhook'
+s
+ 
+pu½o£
+ 
+is
+ 
+to
+ 
+ed™
+ 
+the
+ 
+comm™
+
+
+7 #mes§g
+fe
+. 
+If
+ 
+the
+ 
+hook
+ 
+çs
+ 
+w™h
+ 
+a
+ 
+nÚ
+-
+z”o
+ 
+¡©us
+,
+
+8 #th
+comm™
+ 
+is
+ 
+abÜ‹d
+.
+
+9 #
+#TØ
+’abË
+ 
+this
+ 
+hook
+, 
+»Çme
+hi 
+fe
+ 
+to
+ "prepare-commit-msg".
+
+12 #Thi 
+hook
+ 
+šşudes
+ 
+th»e
+ 
+exam¶es
+. 
+The
+ 
+fœ¡
+ 
+comm’ts
+ 
+out
+ 
+the
+
+
+13 #"
+CÚæiùs
+:"…art of‡ merge commit.
+
+14 #
+#Th
+£cÚd
+ 
+šşudes
+ 
+the
+ 
+ouut
+ 
+of
+ "git diff --name-status -r"
+
+16 #štØ
+the
+ 
+mes§ge
+, 
+ju¡
+ 
+befÜe
+h"g™ stus" 
+ouut
+. 
+It
+ 
+is
+
+
+17 #comm’‹d 
+beÿu£
+ 
+™
+ 
+dÛ¢
+'t cope with --amend or with squashed
+
+19 #
+#Th
+thœd
+ 
+exam¶e
+ 
+adds
+ 
+a
+ 
+SigÃd
+-
+off
+-
+by
+ 
+lše
+ 
+to
+ 
+the
+ 
+mes§ge
+, 
+th©
+ 
+ÿn
+
+
+21 #¡È
+be
+ 
+ed™ed
+. 
+This
+ 
+is
+ 
+¿»ly
+ 
+a
+ 
+good
+ 
+id—
+.
+
+23 "$2,$3" 
+š
+
+
+24 
+	gm”ge
+,)
+
+25 /
+	gu¤
+/
+	gbš
+/
+	g³¾
+ -
+	gi
+.
+	gbak
+ -
+	gÃ
+ 's/^/# /, s/^# #/#/ if /^Conflicts/ .. /#/;…rint' "$1" ;;
+
+27 #,|
+‹m¶©e
+,)
+
+28 #/
+u¤
+/
+bš
+/
+³¾
+ -
+i
+.
+bak
+ -
+³
+ '
+
+29 #´šˆ"\n" . `
+g™
+ 
+diff
+ --
+ÿched
+ --
+Çme
+-
+¡©us
+ -
+r
+`
+
+30 #ià/^#/ && 
+$fœ¡
+++ == 0' "$1" ;;
+
+33 
+	ge§c
+
+
+35 #SOB=
+$
+(
+g™
+ 
+v¬
+ 
+GIT_AUTHOR_IDENT
+ | 
+£d
+ -
+n
+ 's/^\(.*>\).*$/Signed-off-by: \1/p')
+
+36 #g»°-
+qs
+ "^$SOB" "$1" || 
+echo
+ "$SOB" >> "$1"
+
+	@.git/hooks/update.sample
+
+1 #!/
+bš
+/
+sh
+
+
+2 #
+#AÀ
+exam¶e
+ 
+hook
+ 
+süt
+ 
+to
+ 
+blocks
+ 
+uÇÂÙ©ed
+ 
+gs
+ 
+äom
+ 
+’‹ršg
+.
+
+4 #C®Ëd 
+by
+ "g™„eûive-·ck" 
+w™h
+ 
+¬gum’ts
+: 
+»âame
+ 
+sha1
+-
+Şd
+ sha1-
+Ãw
+
+
+5 #
+#TØ
+’abË
+ 
+this
+ 
+hook
+, 
+»Çme
+hi 
+fe
+ 
+to
+ "update".
+
+10 #hooks.
+®lowuÇÂÙ©ed
+
+
+11 #Thi 
+boŞ—n
+ 
+£ts
+ 
+wh‘h”
+ 
+uÇÂÙ©ed
+ 
+gs
+ 
+wl
+ 
+be
+ 
+®lowed
+ 
+što
+ 
+the
+
+
+12 #»pos™Üy. 
+By
+  
+they
+ 
+wÚ
+'t be.
+
+13 #hooks.
+®lowd–‘‘ag
+
+
+14 #Thi 
+boŞ—n
+ 
+£ts
+ 
+wh‘h”
+ 
+d–‘šg
+ 
+gs
+ 
+wl
+ 
+be
+ 
+®lowed
+ 
+š
+ 
+the
+
+
+15 #»pos™Üy. 
+By
+  
+they
+ 
+wÚ
+'t be.
+
+16 #hooks.
+®lowmodifyg
+
+
+17 #Thi 
+boŞ—n
+ 
+£ts
+ 
+wh‘h”
+ 
+a
+ 
+g
+ 
+may
+ 
+be
+ 
+modif›d
+ 
+aá”
+ 
+ü—tiÚ
+. 
+By
+ 
+
+18 #™ 
+wÚ
+'t be.
+
+19 #hooks.
+®lowd–‘eb¿nch
+
+
+20 #Thi 
+boŞ—n
+ 
+£ts
+ 
+wh‘h”
+ 
+d–‘šg
+ 
+b¿nches
+ 
+wl
+ 
+be
+ 
+®lowed
+ 
+š
+ 
+the
+
+
+21 #»pos™Üy. 
+By
+  
+they
+ 
+wÚ
+'t be.
+
+22 #hooks.
+d’yü—‹b¿nch
+
+
+23 #Thi 
+boŞ—n
+ 
+£ts
+ 
+wh‘h”
+ 
+»mÙ–y
+ 
+ü—tšg
+ 
+b¿nches
+ 
+wl
+ 
+be
+ 
+d’›d
+
+
+24 #š 
+the
+ 
+»pos™Üy
+. 
+By
+  
+this
+ 
+is
+ 
+®lowed
+.
+
+27 #--- 
+Commªd
+ 
+lše
+
+
+28 
+	g»âame
+="$1"
+
+29 
+Şd»v
+="$2"
+
+30 
+Ãw»v
+="$3"
+
+32 #--- 
+Saãty
+ 
+check
+
+
+33 [ -
+z
+ "$GIT_DIR" ]; 
+th’
+
+
+34 
+	gecho
+ "Don't„unhis script fromhe command†ine." >&2
+
+35 
+	gecho
+ " (if you want, you could supply GIT_DIRhen„un" >&2
+
+36 
+	gecho
+ " $0 <ref> <oldrev> <newrev>)" >&2
+
+37 
+	gex™
+ 1
+
+38 
+fi
+
+
+40 [ -
+z
+ "$»âame" -
+o
+ -z "$Şd»v" -Ø-z "$Ãw»v" ]; 
+th’
+
+
+41 
+	gecho
+ "usage: $0 <ref> <oldrev> <newrev>" >&2
+
+42 
+	gex™
+ 1
+
+43 
+	gfi
+
+
+45 #--- 
+CÚfig
+
+
+46 
+	g®lowuÇÂÙ©ed
+=
+$
+(
+g™
+ 
+cÚfig
+ --
+boŞ
+ 
+hooks
+.
+®lowuÇÂÙ©ed
+)
+
+47 
+®lowd–‘eb¿nch
+=
+$
+(
+g™
+ 
+cÚfig
+ --
+boŞ
+ 
+hooks
+.allowdeletebranch)
+
+48 
+d’yü—‹b¿nch
+=
+$
+(
+g™
+ 
+cÚfig
+ --
+boŞ
+ 
+hooks
+.denycreatebranch)
+
+49 
+®lowd–‘‘ag
+=
+$
+(
+g™
+ 
+cÚfig
+ --
+boŞ
+ 
+hooks
+.allowdeletetag)
+
+50 
+®lowmodifyg
+=
+$
+(
+g™
+ 
+cÚfig
+ --
+boŞ
+ 
+hooks
+.allowmodifytag)
+
+52 #check 
+no
+ 
+desütiÚ
+
+
+53 
+´ojeùdesc
+=
+$
+(
+£d
+ -
+e
+ '1q' "$GIT_DIR/description")
+
+54 "$´ojeùdesc" 
+š
+
+
+56 
+echo
+ "*** Project description file hasn't been set" >&2
+
+57 
+ex™
+ 1
+
+59 
+	ge§c
+
+
+61 #--- 
+Check
+ 
+ty³s
+
+
+62 #ià
+$Ãw»v
+ 
+is
+ 0000...0000, 
+™
+'s‡ commito delete‡„ef.
+
+63 
+	gz”o
+="0000000000000000000000000000000000000000"
+
+64 [ "$Ãw»v" = "$z”o" ]; 
+th’
+
+
+65 
+	gÃw»v_ty³
+=
+d–‘e
+
+
+67 
+Ãw»v_ty³
+=
+$
+(
+g™
+ 
+ÿt
+-
+fe
+ -
+t
+ 
+$Ãw»v
+)
+
+68 
+fi
+
+
+70 "$»âame","$Ãw»v_ty³" 
+š
+
+
+71 
+	g»fs
+/
+	ggs
+
+
+	@.git/index
+
+1 
+	gDIRC
+      ×AÑŞãZR×AÑŞã     ¤  è  è   yPoÃ—#˜í©ôè@& _100ä¾‹/.py ×AÑŞãZR×AÑŞã   !  í  è  è   
+
+2 íß (¡<UL_(Š1¨{ _100ä¾‹/add.sh      ×AÑŞãZR×AÑŞã   "  í  è  è   :.°–Ûæ?¿[vƒË,vÔè.ì _100ä¾‹/d–.sh      ×AÑŞãZR×AÑŞã   #  ¤  è  è  /]ò*‡czTR;wÚN·ìó— _100ä¾‹/ex1.py      ×AÑŞãZR×AÑŞã   $  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex10.py     ×AÑŞãZR×AÑŞã   %  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex100.py    ×AÑŞãZR×AÑŞã   &  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex11.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex12.py     ×AÑŞãZR×AÑŞã   [  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex13.py     ×AÑŞãZR×AÑŞã   \  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex14.py     ×AÑŞãZR×AÑŞã   ]  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex15.py     ×AÑŞãZR×AÑŞã   ^  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex16.py     ×AÑŞãZR×AÑŞã   _  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex17.py     ×AÑŞãZR×AÑŞã   `  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex18.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex19.py     ×AÑŞãZR×AÑŞã     ¤  è  è  —³ıG&c{2¡3íFÓÈ ©ôÙ ı _100ä¾‹/ex2.py      ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex20.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex21.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex22.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex23.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex24.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex25.py     ×AÑŞãZR×AÑŞã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex26.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex27.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex28.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex29.py     ×AçãZR×Açã     ¤  è  è  ›Ä„1ûu.‚¯#|xôGn1§m _100ä¾‹/ex3.py      ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex30.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex31.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex32.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex33.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex34.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex35.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex36.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex37.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex38.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex39.py     ×AçãZR×Açã     ¤  è  è  ´¡B1ÚğwM†í<æóåX _100ä¾‹/ex4.py      ×AçãZR×Açã   {  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex40.py     ×AçãZR×Açã   |  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex41.py     ×AçãZR×Açã   }  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex42.py     ×AçãZR×Açã   ~  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex43.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex44.py     ×AçãZR×Açã   €  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex45.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex46.py     ×AçãZR×Açã   ‚  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex47.py     ×AçãZR×Açã   ƒ  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex48.py     ×AçãZR×Açã   „  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex49.py     ×AçãZR×Açã   …  ¤  è  è  çºeà¯ Ù¶yı’ _100ä¾‹/ex5.py      ×AçãZR×Açã   †  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex50.py     ×AçãZR×Açã   ‡  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex51.py     ×AçãZR×Açã   ˆ  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex52.py     ×AçãZR×Açã   ‰  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex53.py     ×AçãZR×Açã   Š  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex54.py     ×AçãZR×Açã   ‹  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex55.py     ×AçãZR×Açã   Œ  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex56.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex57.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex58.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex59.py     ×AçãZR×Açã     ¤  è  è  ¥ÍìÅ·(IN€˜‹~áŒ%aú? _100ä¾‹/ex6.py      ×AçãZR×Açã   ‘  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex60.py     ×AçãZR×Açã   ’  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex61.py     ×AçãZR×Açã   “  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex62.py     ×AçãZR×Açã   ”  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex63.py     ×AçãZR×Açã   •  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex64.py     ×AçãZR×Açã   –  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex65.py     ×AçãZR×Açã   —  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex66.py     ×AçãZR×Açã   ˜  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex67.py     ×AçãZR×Açã   ™  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex68.py     ×AçãZR×Açã   š  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex69.py     ×AçãZR×Açã   ›  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex7.py      ×AçãZR×Açã   œ  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex70.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex71.py     ×AçãZR×Açã     ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex72.py     ×AçãZR×Açã   Ÿ  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex73.py     ×AçãZR×Açã      ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex74.py     ×AçãZR×Açã   ¡  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex75.py     ×AçãZR×Açã   ¢  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex76.py     ×AçãZR×Açã   £  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex77.py     ×AçãZR×Açã   ¤  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex78.py     ×AçãZR×Açã   ¥  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex79.py     ×AçãZR×Açã   ¦  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex8.py      ×AçãZR×Açã   §  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex80.py     ×AçãZR×Açã   ¨  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex81.py     ×AçãZR×Açã   ©  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex82.py     ×AçãZR×Açã   ª  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex83.py     ×AçãZR×Açã   «  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex84.py     ×AçãZR×Açã   ¬  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex85.py     ×AçãZR×Açã   ­  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex86.py     ×AçãZR×Açã   ®  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex87.py     ×AçãZR×Açã   ¯  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex88.py     ×AçãZR×Açã   °  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex89.py     ×AçãZR×Açã   ±  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex9.py      ×AçãZR×Açã   ²  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex90.py     ×AçãZR×Açã   ³  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex91.py     ×AçãZR×Açã   ´  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex92.py     ×AçãZR×Açã   µ  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex93.py     ×AçãZR×Açã   ¶  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex94.py     ×AçãZR×Açã   ·  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex95.py     ×AçãZR×Açã   ¸  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex96.py     ×AçãZR×Açã   ¹  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex97.py     ×AçãZR×Açã   º  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex98.py     ×AçãZR×Açã   »  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/ex99.py     ×AçãZR×Açã   ¼  ¤  è  è   '–ºß©HÆe–Bkğ¬ıÊoŞŸ _100ä¾‹/som‘hšg.txt       ×AçãZR×Açã   Ú  ¤  è  è  †ô‰¥=Ûbxô†°˜ú…ïs§O¤y .md ×AçãZR×Açã   İ  ¤  è  è  ‹:¨èyĞ/¶3„éà"‘³}Ÿ³Ğ 
+
+3 
+fÜmuÏ
+.
+py
+        ×AçãZR×Açã   Ş  ¤  è  è  @1ÔS¯ÕáÄƒÄŠ±\LÎ  .py       Ç„Ë±R(îŞéÔG1‚Ş²,ûû
+
+	@.git/info/exclude
+
+1 #g™ 
+ls
+-
+fes
+ --
+Ùh”s
+ --
+exşude
+-
+äom
+=.
+g™
+/
+šfo
+/exclude
+
+2 #Lše 
+th©
+ 
+¡¬t
+ 
+w™h
+ '#' 
+¬e
+ 
+comm’ts
+.
+
+3 #FÜ 
+a
+ 
+´ojeù
+ 
+mo¡ly
+ 
+š
+ 
+C
+, 
+the
+ 
+fŞlowšg
+ 
+would
+ 
+be
+‡ 
+good
+ 
+£t
+ 
+of
+
+
+4 #exşud
+·‰”ns
+ (
+uncomm’t
+ 
+them
+ 
+you
+ 
+wªt
+ 
+to
+ 
+u£
+hem):
+
+5 #*.[
+ß
+]
+
+	@.git/logs/HEAD
+
+1 0000000000000000000000000000000000000000 
+d7e3b976e1bd28d77ed92d35313f2b08e2504915
+ 
+	gn›bow’
+ <18656957051@163.c
+	gom
+> 1515378497 +0800 
+	gşÚe
+: 
+äom
+ 
+h‰ps
+:
+
+	@.git/logs/refs/heads/master
+
+1 0000000000000000000000000000000000000000 
+d7e3b976e1bd28d77ed92d35313f2b08e2504915
+ 
+	gn›bow’
+ <18656957051@163.c
+	gom
+> 1515378497 +0800 
+	gşÚe
+: 
+äom
+ 
+h‰ps
+:
+
+	@.git/logs/refs/remotes/origin/HEAD
+
+1 0000000000000000000000000000000000000000 
+d7e3b976e1bd28d77ed92d35313f2b08e2504915
+ 
+	gn›bow’
+ <18656957051@163.c
+	gom
+> 1515378497 +0800 
+	gşÚe
+: 
+äom
+ 
+h‰ps
+:
+
+	@.git/objects/02/3aa8e87905d02fb63384e9e02291b37d9fb3d0
+
+1 
+	gx
+’ËJÃ@†İÎ<Å±]4I›^¢‰(èÂ¥ $éDÚDSJ¡xYëÆ…xC,.ñ‚®Òn|™4éc8iÒRµ›8ÿ9çÿşadİ”a¥\ZH/œz­ kF`5ì}ÓXÂià9³¢{kàØ*¿}Ó¡54[æ!1hm[Ó‰!U‰ªY«:º”·|}¯=<=öİàµ\öÃç3Œ+D42¬ˆ‘ë ê¦d3ša96“_ ‰aYŒäù²œÈÊ|Y‰eŒ*D·#™ãàa™“8Õ4ÃfR1“ï Dh¶Ü]²Ñ=>éL1•2)Êƒ‘¦]HUÊ>Ù3ú¾®>|¯=Í™¢èD¯“¨‰NÄñ;ÃË,p\1_àŒÀIˆ!WHôì¿ğƒ»à{/¾wŞzá['¼9¾ßıfkxÑm¶¦)ÜR\!zTŠ6…šD‰©&Ö34óÌş9Í˜$ö?¨_=JÓ¥X„qòcÿ ë
+
+	@.git/objects/05/2a89de56e1fc37734926542c8919b87d1be614
+
+1 
+	gx
+•Á 1 }§ŠüÙİÜ&±;
+	gd
+Ùà=î
+N
+ˆ
+X
+ƒ=
+Y
+…
+x
+-ø™¦±{"ÚõÕÌÇ,*Ä4bT‚)
+
+2 
+V
+-¥ª
+AJ
+Äİ½¬6
+w
+ßš”*ğ -´Š1Fª"¹†¢XEË€!‘+~[V?V—§Íşˆ9fNÀxÆºL'ŒÂ@~à6ºıuûßt—×Vœ¯ğı¼İô™A
+
+	@.git/objects/0a/eddf200902442818a13c554c5f14288a31a87b
+
+1 
+	gx
+ÊÉOR07fPVÔOÊÌÓOJ,ÎàâJË/RHËÌIUÈÌSH­¨6ÔÓ340¨Õ+¨äJÉçJN,Q(ÎÏM-ÉÈÌK×+©(Q°³S©æ¥r ø;”
+
+	@.git/objects/13/cdecc5b70228494e80988b057ee18c2561fa3f
+
+1 
+	gx
+]½
+	gN
+Ã0Ç
+	gY
+ã§8Ò%ºÅ!)Œ¼@”!—
+	gb
+)\"7º21Â ì v¤>S#ñ8NÚFlöïîş&pæ‰ƒÉá¼Yªy"
+	gi
+
+	gt
+Õª¾-é”
+	gM
+€ËLÒÂ‡¦ÎùEG4¿lô†òáF"\•š]Ë)¾Cğñ|V­³m›µï/íúó÷ékóıÚ¾ıl?æË¤tÈõ™% ªşåij)¬˜…Å¤¿äÂ…ãA…{.c•’T;f(N\¶.§©üg5’´Ï0vÅºY'i4 €ÓQ%HÓ
+
+2 ¦Ê~
+	gw
+ò˜ã‹h<ü½ÈeÛ–;q>¸)óÁA‚»
+
+	@.git/objects/13/e7ba65e0af0fa0d912b679fd06660378176992
+
+1 
+	gx
+ÊÉOR06µ`PVÔ/-.ÒOÊÌÓOÍ+S(¨,ÉÈÏ3æRVĞÕÒUHÎOÉÌK·R(-IÓµ ‰ Å*Š¬ü2SœòËSó€bn™9©y‰¹©V
+
+2 ©¦
+z
+•\\
+JJJ
+\/ö
+M
+~ÚºôÉÎ';V=›ºåÙÔ:•:Uï÷ô¼X¿ıYW×‹ı3a’OÙøtCÿÓ—,ékßõ¸¡†
+
+3 
+WJj
+š
+BAbfE
+©†¦…‚­Bf^‰Ff^Ai‰†:Ğ$ˆ5Ï×¬1„Ûc¥ ®©ÉÅY‰[­ºÚ*ÜjÑÔrqæ— •GWè(Tê(TÅ‚ôŠó‹J4€¶Ü¢ÉÅ7 ˜
+
+	@.git/objects/16/d0054d9216139fb5725a32961fe7b3b8c37a0f
+
+1 
+	gx
++)
+	gJMU07e040031Q
+ñuÕËMaHëüqYÓËfkœÀÑ¢lwC.ûüK6PEiùE¹¥9‰z• Ë×«L 1Şbêş½c…Yêg^Şø•¼ ¬
+
+	@.git/objects/19/b3fd4726637b32a133ed46d3c8a0a9f4d900fd
+
+1 
+	gx
+]OõuçW\—¶HÛİ–Ù}0áÅ?@xèÊ§Ù¦¶*1&H­]"¶*0ÑŒÆˆ51Œ»Óö©Á;3¥XÅ}˜;sçœsÏ½³Î¢çÀ”5umèz¼ğ((‹»ì1d—ó=–$C‰Â²
+
+2 ù
+	gt
+ô–È`ş
+	gN
+9î
+	gS
+î
+	gzO
+\†¹{tÑ
+	ge
+©%×÷
+	gi
+"–]&D×u4_{au“×Î[{/ÃƒíNy“8æoÿ3o|äÕîoüZYUGc&œU‚“
+
+3 ÷·[
+_
+×
+pc
+™Á
+Q9
+,ù
+N
+£Û\
+W
+õò,óF·¹¯x/»`¨T•»;â§ĞÅ××PJæ T%ŠË²hw26.J+u¿>&ªÇ¯;;?”K%qQüJ ) ‰¡_Ÿ*^ÉNŠò’…lË ÷[P÷ÿQ°d ıfæÔn”Ú?ËJ'ßw 9§à´Ò©¶öwÛç[aé <Ûâï|õ3è_êå{Ï¾rÊßÖ»Í÷òÏ ón24Å2”›h¦²¼AY¶7†ÿ•µa8!Z
+
+4 
+q
+³è
+N
+|£0Ñ‹
+c
+½˜è
+E
+h`˜1ÓÂ#®ã2$åªö“2XÍ Ô$ZÚËóĞäĞ¡kˆBÂ£FÓ@á6¤f™7'ÎH¸9ÊLdÄ"/º‘9B´lNô¥ÿ5=Çñê1,¶”Ê\N„ü“şÌ2
+
+	@.git/objects/21/5a11cc6e0b846bda02b0c080c0122d46960875
+
+1 
+	gx
+×
+	gMHTQ
+€á!ˆş@7 ˜EÜæÿCRa‘-""t“D¤sK1ĞQÇ b,2ZµÛ•«
+
+2 
+	gZ
+$ºSA.‚pÑ@Ô¬ŠA¦Ñ{×÷å|ç{Îêf‡£()‰0•2J%ƒë‰‰s™[ù×{š–ŠMWÒåµã-Ÿ­ÖÉËét0Ò—ØYZMîØr²uïl[×™K»[ï‡O'7‹‰­ZÏw¶~úzìU÷Øí¥Cc+kÁ·Í.¬N9¼ıâƒÓ½7:Ïÿx6ÿòÀğÏ™?Eªšìo,Ì¯¿ÉG…öïs•ÅÌçG%1šÚ¤ÿ#x’äDq¢91œXN'“Ë¾•–ŞI1+K§–ß=.–?$*õì/Ø_°¿`Áş‚ıû öì/Ø¿¶óÂğ÷hÃ…`êYóƒ›¹rÇPød°î/Ù_²¿dÉş’ı%ûKö—ì/Ù_²m¡¹¦J©­³çî|Ï‰{¿¶u½;}ôKİ_±¿bÅşŠıû+öWì¯Ø_±¿b¾­fÍşšı5ûkö×16bÍşšı5ûóU ûö7ìoØß°¿aö7ìoØŸçXö·ìoÙß²¿eËş–ım ö·ìÏ‡8öwìïØß±¿cÇşıû»ì£`Ïşı=û{ö÷ìïÙß³¿gOº#™Á(Û×?t5Èæ²ÿü[›À&
+
+	@.git/objects/27/1196badfa948c6816596426bf0acfdca6fde9f
+
+1 
+	gx
+ÊÉOR0·dPVÔ/-.ÒOÊÌÓOÍ+S(¨,ÉÈÏ3æRVĞÕÒUHÎOÉÌK·R(-IÓµ ‰ Å*Š¬ü2SœòËSó€bn™9©y‰¹©V\ ªì
+
+	@.git/objects/2e/0eb00b9605dbe63fbf5b7683cb2c76d4e82eec
+
+1 
+	gx
+ÊÉOR0µ`PVÔOÊÌÓOJ,ÎàâJË/RHËÌIUÈÌSH­¨6ÔÓ340¨Õ+¨äJÉç*NMQP7Ô1IQòòR¹ ‹"
+
+	@.git/objects/2f/085df22a87637a54523b77da4e81b72972f397
+
+1 
+	gx
+•
+	gQMK
+Ã@õšı£¶%Õ‚ĞƒGÿ€xHÍ¶İ~lB6µ¡Š¢´‚< bAÛ_c’ê©ÁMRÔC/. Ì¼y3ox›¯šyÈnd‹é:·ÓyÊÒ„€ÕtJ&[C H.'aß4(+jPw
+
+2 Éø
+f
+]0È
+v
+(-³
+A
+˜À¶
+i
+•0½
+F4
+ ‡
+j
+Êj"$Ë2
+
+3 îÛş`à¹ÏÁÍĞ¹úêÇÉ
+iF
+Äšˆõé¨ó
+y6
+¼·‚‹ÿÔ÷‡—‚ê½]
+ynw2p
+ı^Ç
+s
+¯ƒÛÇ¯ó®ÿÔ
+WL
+ú-Ï
+m
+{ã°œü^+¸{
+gE
+‰"ƒ€ë¬A(/Õ±¢!©J¹9ØİCRÁ´`ë¬H°º
+
+4 Ùáå9xÔ¨Ì
+kH
+´ ˜Â
+b
+Ê
+
+5 èÌ˜•
+YQ
+;•
+h
+·
+$I
+\úÜ±1U`%
+J
+Ä
+P
+œ
+T
+!2‚²´”*›”a®ÎĞğô”nY„˜gbT9 oÏÒ9G’eSæ`ùÇÌ£ã)§„+5İÁâ¨(Bh¶4¶Xƒ£ã_ZDAèÉè#Kè%
+
+	@.git/objects/30/3c908a820fc014afbecc9b09dc16e199132ca5
+
+1 
+	gx
+×
+	gMHTQ
+€á
+A
+(´
+B
+*
+j7
+ ˜…Üæÿ
+CB
+!‘-*"
+
+2 ¢ˆç–‘:¡“Ä¤¸
+r5
+¶«
+Y
+Õ€`´
+iQD
+Ô²6ä*
+q
+Ñ€äì
+d
+ 
+f
+Ñ…øŞõ}9ßù³ºÙá(
+JJ
+#E"L¥ŒRÉàşxbübæqşÃ¶ÙögåÒÁÛéÊÊ©ÿŸ­ÖÉ[ét0ÒŸØS^J¶4î<Tì¾rîæşÎéğÕÄF‘Ğ:¿·°ëçòÉ÷×G'¿v~_ şlŒˆramÊñæ=í{xùÒ‰±Åù·G‡×f7‹T-9ÒVx·T:û)î­ÎU¿d~=ß’Ähê“v>Fğ$É‰âDsb8±œ8N<&u–ÃÕŞ¾ Q”å3ß>¿(U~$ªì/Ø_°¿`Áş‚ıûöì/Ø¿¾óÇ©pıAëµàÉëö™G¹JïPør°á/Ù_²¿dÉş’ı%ûKö—ì/Ù_²}¡7»‹=áâêØù–rs÷òÚ¾¦ßWşŠıû+öWì¯Ø_±¿bÅşŠıûóm5ûkö×ì¯Ù_³¿±ûkö×ì¯ÙŸ¯bØß°¿aÃş†ıû›³¿aÃş<Ç²¿eËş–ı-û[ö·ìoc¸°¿e>Ä±¿cÇşıû;öwìïØßÅ cÿû{ö÷ìïÙß³¿gÏşı=û{ÒÉÙş»Cw‚l.»íØ?8ç$‹
+
+	@.git/objects/30/8b7fa5e5bc58c6392db2441d1855d5e8958488
+
+1 
+	gx
+Í
+	gT
+]
+	gk
+Ó`õ6ï¯xÖ!
+	gK
+µ]“¦Ó.Ø^xé£¤ÍÛ.Ò¼)
+	gi
+¢–
+	gR
+Ø…
+	gb
+/¼£Rè.Ú‹ÁDÁ]Xœúg–l^í/ø<o?ÖÍ‰
+
+2 Ş¼œ<99çää!•†
+	gW
+=
+o
+¬]
+Y
+^Ê…-?
+WqD
+‹Ğ
+l
+Û0Ø2d¯
+e
+¡êÙ¨›µl‘&8¿"Ã7áÃá÷œİu\X.7?*¬6ÛŒ¥R)vòõEüd”Çã<“~Îhtzø,î“WïN¾½9ú´÷’×ï§x|püöññş~ütç§‡©Äl^ƒû¡]çeÛj«i“)mnùPª#ša ®LìĞëèóÒi¦¸¶/ca–3^Ê‰FI0U²jPn ­£›†É›ùõŒA¨`Ğ7 éX§K]#¨ã3ˆóˆ»L‘RÕE©âŸJµB—
+
+3 
+A
+-1Å©*
+k
+¹
+
+4 ƒÓàù Î§Ó™%ì9SGæ1©T¥éS¡©N¿È÷è–™Z­y¾kƒ:%ò¼‰O*>w±›E·ˆµ“æ6%o‹<f&I´›¼ìá>È–;]4Cß~htÎ63qÉ¢ŒÀ-.¥08¸à[¢ÎU}Ê”ï¢(³z®—f)œ-
+
+5   
+N
+«,
+B
+‹›
+sH
+|!İ…<?
+o
+(†{¿Œ)³
+J
+
+
+6 <Ë»
+Xo
+<şø×ê­şõ
+V7
+
+S
+¯ò¯ú
+U
+ØÂÏı ô
+Y
+Å8
+
+	@.git/objects/3c/12570fdb443d038587e2d6678c857e93bf5e28
+
+1 
+	gx
++)
+	gJMU06g040031Q
+ñuÕËMaHëüqYÓËfkœÀÑ¢lwC.ûüK6 1a£
+
+	@.git/objects/3f/ca8574588258dd8898b504b81e0e2ecd4cabdd
+
+1 
+	gx
+×
+	gOH
+“
+	ga
+Àñ±
+	gP
+´Â0û{¶"Şö>ÿŞ÷%ÁÈ‚’ˆ‚(BÄ½¦¤.té–Q­‚ :D‡é-wªA`P$xéĞ¢èT²™’;ƒÚÕ!úîü|y~ÏóyNO|Ğ÷CÒH°#£TÈ:—$Ä.§o¬Ïe7uGó{›~/;Z‡:£Qk¨'°:7ªîÉ4?Ô±!|Ó~0ºRDı¾baÕ=Z“®ú8ßòìÔğµ·»†?,X‹+#ü„]œ²»æô÷7º.;ºgd¶=5µıyìO)&ÛëÓÓsÙ¯R~ºõìÒÃÂ›Ø§{%4¥IÿßFğ$É‰âDsb8q8q9ñ0)±l}\hkê™ÛÿşõD6?(”@°¿`Áş‚ıûöì/Ø_°¿`ÿÒ_\·¯;i]l¼s1‘o°ï÷—ı%ûKö—ì/Ù_²¿dÉş’ı%ûKö/]èIu¦Õ]9\Û—«i_^üz¢ì¯Ø_±¿bÅşŠıû+öWì¯Ø_±é´ß¦ıÏ“ë&fÖ?Mª»W%6÷Ş-ûkö×ì¯Ù_³¿fÍşšı5ûkö×ì_:JÃ»Å—SÁğÁö+ã·ª.}¹½­óGKÙß°¿aÃş†ıûö7ìoØß°¿aã°¿Ãşû;ìï°¿Ãşû;¸°¿Ãş¼‰Ëş.û»ìï²¿Ëş.û»ìï²¿[ûWP°¿Çşû{ìï±¿Çşû{ìï±¿GºC±~?ŞÓ;pÆŠ'âÿü‡ı!
+
+	@.git/objects/45/5e3dcd82a8a8f43be80a6b6a003d8cd9d5192b
+
+1 
+	gx
++)
+	gJMU045a01
+ …€Ê’Œü¼
+	gxC
+ƒ'ûº|Í×ÏS34©¶ù>ÉıúóißìM‚yRf&&
+
+2 
+	gA
+®.¾®
+	gz
+¹è
+	gi
+?.
+	gkz
+Ù
+	gl
+8
+	gZ
+”í
+	gn
+È
+	ge
+ŸÉª(-¿(·4'Q¯ ’ÉjÅ‹JÖúÛŒ[^>Pš¸¹vşæ%E™‰yé9©ƒş†W‚×_}xD¬¤ùH×ÆŸsœ² §{=Ú
+
+	@.git/objects/4d/37af9e2631347b3cf79247d7e796f63f34530d
+
+1 
+	gx
+×
+	gMHTQ
+€á!¬@*
+	gl
+·¹çÿ`„h‹ˆˆ„(BÂ¹¥”NèdãÈ¨`Ô¦Mc»r5µ"h‘HÔ²ZT«bÍ.™ZDï]ß—óï9«›‹¢¤4R$ÂTÊ(•.N&&ffó/¶µ,µİ,·ŸMWJÚ¶Z'Ï¤ÓÁøPbsy-¹iCOgërWÿá­WÃ{ÓëE:ºP+‚æ‡[
+
+2 ?~é~~
+	gjb
+şõ‰·¥àëúˆ(Ö¦ì
+	gk
+:ı}÷âàÔñ
+c
+û/8’²
+k
+ìÇÒŸ"UK:Z
+
+3 
+O
+×Š‡
+V
+ó
+Q
+áàù
+o
+÷«¯2Ÿ
+n
+ı•Ä
+h
+ê“şŒà
+I
+’Å‰æÄ
+pb9q
+œ
+xL
+ê,;ûÚ§Å²,÷¾yy»XyŸ¨6@°¿`Áş‚ıû öì/Ø_°¿`ÿúÎ+ áÏKÍ'ƒ¹×gr•¾ÑğîHÃ_²¿dÉş’ı%ûKö—ì/Ù_²¿dÿúB©k³w>?;±ê÷>êÙÙÚÿ®tcáJÃ_±¿bÅşŠıû+öWì¯Ø_±¿b¾­fÍşšı5ûkö×16bÍşšı5ûóUûö7ìoØß°¿aö7ìoØŸçXö·ìoÙß²¿eËş–ımö·ìÏ‡8öwìïØß±¿cÇşıû»ì£`Ïşı=û{ö÷ìïÙß³¿gOºã™‘(;4<z.Èæ²ÿüûá%G
+
+	@.git/objects/4f/4031d453afd5e1c4167483c48ab15c4cce091d
+
+1 
+	gx
+ÊÉOR06²dPVÔ/-.ÒOÊÌÓOÍ+S(¨,ÉÈÏ3æRVĞÕÒUHÎOÉÌK·R(-IÓµ ‰ Å*Š¬ü2SœòËSó€bn™9©y‰¹©V
+
+2 %
+E
+™‰
+y
+é9©
+z
+•
+
+3 /Ö-|¾
+n
+ú“/–
+Oz
+º
+w
+ÑË¹‹/
+_
+ÏÅ•’š¦
+X
+”šŸŸ®¡iÅÅÉÅ™¨`«–“ŸX¢‘™WPZ¢¡n§ ®©ÉÅ™„C<»81PB#QA[! ˆ“5õÀ¦-‰ë&j‚È$0™¬©©¥e gª ¬ğlëö'{–½ßÓû|ù²';ç¾œ¿íiëš§{ú¹8 Š2óJ4@×äâÂt? üís}
+
+	@.git/objects/64/a6bf9f5bc9a89b35a65af6ec7d00ca9f38f423
+
+1 
+	gx
+•
+	gAJ
+Ä0@]çÙ ò’Ÿü‚ˆ
+	gWI
+šÑ©”¸w¡(ˆ¸\‰‚«YÊP½L;3½…½‚»Çƒ¯lêz–¥"}Û”¤C‹Á1B(*äH•
+
+2 
+	gtE
+ å!qîÛ4Ï2–š,ÀÄÚÖ%8ï¢)M‚©¨PÖi-üE>kZ9Ÿ%yŒlÉä€ğ­>*›úD"!›Ø°<“ÖrúW$úßÕğ~?lûŸÅpı±}½í¿7ıºë×——_»Ï»¡{ºññy÷r5.WãÛ“ø2×]
+
+	@.git/objects/65/580c5ac621e01865b482a6f2b2b69d89e4f847
+
+1 
+	gx
+•
+K
+
+
+2 
+	gB1
+  ]÷İ ’ô“6 â
+	gU
+Ò>°
+	gVJ
+ßıíÜÎ00
+	gy
+ô~,
+	gm
+€.
+	gk
+Öª‘
+
+3 €
+	gw
+… ÉãÅ&l5$›b¶A ©¯ÌúYZ¨ÄŒ
+
+4 @¦
+	gd
+âê¸Ù@¼#á,NÉ¹^cêÏQõ#ybÀãÉŞòè½q[D}… 6İk«ş©6f?ß¢~ş:]
+
+	@.git/objects/66/89f8d3294a3cb55e10c5726b47310a3f6fd23c
+
+1 
+	gx
+ÊÉOR06`PVÈ­,¨,ÉÈÏã‚P/gõ?ëì~¾»ùÉÎ\ …
+
+	@.git/objects/69/8c8908ef0f251c2041290181bcaabce0772556
+
+1 
+	gx
++)
+	gJMU044a040031Q
+ñuÕËMaHëüqYÓËfkœÀÑ¢lwC.ûüK6PEiùE¹¥9‰z• LV+^T²^ĞßfÜòòÒÄÍµó7_€ª*)ÊLÌKÏI)ów0¼¼şêÃ#b%ÍGº6Æøœã” 'T.#
+
+	@.git/objects/71/61b605810e009f18d5fad203f50b0178d2a445
+
+1 
+	gx
++)
+	gJMU045a01
+ …€Ê’Œü¼
+	gxC
+ƒ'ûº&t5ñ¿ïÌlÎ;b
+
+2 ë,™™˜(¹:ºøºêå¦0¤uş¸¬ée³5NàhQ¶»!—}ş%¨¢´ü¢ÜÒœD½‚J&«
+
+	@.git/objects/79/506f7f81c31511972398eda9166664f4e84026
+
+1 
+	gx
+ÊÉOR04µ`PVÔ/-.ÒOÊÌÓOÍ+S(¨,ÉÈÏ3æRVĞÕÒUHÎOÉÌK·R(-IÓµ ‰ Å*Š¬ü2SœòËSó€bn™9©y‰¹©V\T6 ‰1Ö
+
+	@.git/objects/82/3f9cdc20b559ecc49dbcad6d546f29611493f3
+
+1 
+	gx
++)
+	gJMU045a01
+ …€Ê’Œü¼
+	gxC
+ƒ'ûº£Ïäq·dßbÚp á€®Û4R ”™‰‰B«£‹¯«^n
+
+2 
+	gCZ
+çËš^6[ã»Ùç_²*JË/Ê-ÍIÔ+¨d`²Zñ¢’õ‚ş6ã–—”&n®¿ù^zN*H™¿ƒá•àõW+i>Òµ1Æç§, ˆ<¾
+
+	@.git/objects/a6/d8c1c129ab7062dc69e49f37610a69fe7a9ca4
+
+1 
+	gx
+’K“š@ „sæWÌJä5€U»© Ë"(*¨pã1ŒÃCÑıõÙd¯I¿ª®®®î¢ï:Ê€
+
+2 …
+	gŞ
+ÄÈ…(
+	gAM
+¨Ê\
+	gQ
+ä
+	gR
+
+	gu
+¨
+kX
+*
+	gUU
+Ó )çÄ’Îe;÷#@³Ÿñ¼ˆP•„%T¡¢Ûîé2Úş(úî'¡%EUDî“~¦2<‡²Õ”ƒ—K?â¡}ş"”§ü?62%àû™¶ã":!Ø»2¢xgÿåàÀ|3Ó0LË0¶æÖËb„Bkg®µs­Ã(W®kx"İîÜÊÌHö¶n¨ä½›5°¾-Ş“h+zˆ­ Êï¡x2 øb>=ô6ò»º§×v/Ù5‚Ñi³rv‰iÊ+^®Í¼[XqôöÑì/Q,R¥Eˆf{m“D[ê;Æ$èïÉì§p‚":"]då”Í¹yTmä[-8ár3<cvJut¸Öe‡|Ùk#s·ZR‹<<âÈëj¯UäëqOüsÃ—º:±¦T[¯ìò<·&W’AšŒŸD‚ÒûI½½ÏzãB4»{/åS5mJ¿.Fb?¨×èÊÖëg½r,=¿zLşëumc¦Vó¨óiî¢–üW¼ŠÅÔq_›Ùèíß‹qî…2šµàë¿ÇNÊì
+
+	@.git/objects/a7/af24965433b43547f788a83665f30d0d5fa90d
+
+1 
+	gx
+’ËNÂ@†İÎ<Å´…r©hH&ºpé#˜´eªMJÛ”VKñ² âÆ…ñ#q¡1^¢«ÂÆ—)…ÇpJ °™“ÌÎù¿2²nÊ°V,-%—¢ÕÎÉš‘#Æ!X5çÀ4Vp’çxPÌ²fì¯ƒë¨| è Nn¹T·EØÕ›GÄÀÉ'†T!"¨¦]qu)kÕ ü:>?~³vôÚá['¼ê^Î1.ÒÈ°"F€ª›’Ãh†å:LjT@!Å²É‹ey,+‹e%–1*İ‰€‡"'q
+
+2 ÆÈ²5Ã
+	ga
+1
+	gS
+à÷
+	gD
+¨7¼=Ò
+Q
+
+t
+&ŸÈ
+F
+‰(™”9
+
+3 åÁ
+HS
+.¤*
+e
+ŸìşÜ„×Ÿßœæ
+LPt
+¢
+WI
+Ô
+D
+'bŒÍxºáe
+
+4 48.Ÿ]
+es
+ŒÀ
+It
+ !
+O
+ëé
+y
+ğÃû–ø¯1¸óï­Áíiÿã!|ìÖıËv½1Má2à Ñ£R´)Ô$JL5±¡Yd6ç4c26ˆ³ÿCıîPÚ˜.Á"ŒÇ?†añ/l+ê½
+
+	@.git/objects/ac/16fded3c546286ba624388fa0755d0c7873ee3
+
+1 
+	gx
+Å
+	gT
+Ë
+	gn
+Ó@ëùŠÛT¨ $Ÿ4±H%XtÉå4“Ö( DU¥.@dÁ¢Š”.’E¥"è‚ˆ?S»eÕ_à^;OZÄæŒ}}æœ3÷\m¸UPT­|cq¡´¼bÕ.³íï¸Bc‹P¸U€-·f‹m¿^(Që÷&<°9Üwµ5»Á…åpø}¹Ùf,“É°‹o/£gƒ¸wãn‡0\¾ˆ:ıøõû‹ïoÏ>ïGı£øÍ‡ÑóğäüİÓóããèù!Ö/O{‰«ñ:<Û|³fµ³9“ImnyP[øY[4?»”Ú¡×Ù—¯&,årLr\áï\ÇÂ,S^Ë ·7Rjp«‰¤u9š’‡;¸–qUT(!¨Š† ë+šÈhÆ“¶\ÃÌ(@%0H¦„ *$£“Ì
+
+2 ‚&“Œ¦£% Ó“€Vm²^©Mìç¶—ş~;“ì:d“ß]–¡R9®ÙIuT³DmÂT¹@Lš—ÔôhV™İ=öğ#Î)³\w=ÇòÙĞ Wa|Øõd‚ƒÌèÓ]é1ìÜË*¶’|ÆFqx¿êàuK†¸»‡†èİí „ƒ9ë|*—'ƒ$´x"……Ö¦ì9%š¦¹MÜ³_ä¯Şg$ô~ëšX'Nä?¶ŸíX4üôç¥Œ&<Mù¿{–fšæù§]“ØÌ‚ı½7
+
+	@.git/objects/b4/06a14231daf0774d096ced083ce6f30c02e558
+
+1 
+	gx
+Í
+	gTQk
+Ó
+	gP
+öõŞ
+	g_q
+Ö!
+	gK
+µ]“¶
+	gj
+ì@öè£¤Í
+	gm
+š¨¥|PìÃÑNíÃ`2Á=Xœúg–l>í/xN’ÖV‚Lğå´î—ïœó}7©6*h…’zmy)ç·İ\Õ’9!«ãm;²À—!{#5Ç´dCß«gKTÁú=®,÷ÇBbmÃj
+
+2 
+	gi
+Ø
+	gB
+ñ¤¸Úê
+	gp
+
+	gJ
+¥øù×
+	gW
+Áó
+	gq8
+|1†{}ŠƒñÅÉNĞ…oŞŸ{{úéi0:’|r|öîÙÙáağbë'Ãˆ‰›¢}³!*¦ÑQÒ:g¸PŠ%[¾§¬Äí°×éç/:¬¤ÓœÙô¶/Cá,?QHy)f0÷† “iÕ¼J]M/h™¼_Ë(+ê5s‹²Û”İ¡¬Da5•RßÁ<y³ˆª6OUú[ª¶o“ È¥rÆ™U‡dã2h¨Ã³vEú60ÅBË%ÁRİÊÔí¡
+
+3 ÍßäGÀè µZw\ÛğÒ:ˆ(
+
+4 1‰,š
+	gmA
+Í°{„„ë
+PTU
+(ã
+P
+\
+Pf
+Õ¤
+fHs
+†Ô¹
+DH
+ò
+Š
+>éûà¹0µ‹ÑÒwA%úxã…‡uĞòtD¨uˆ­ÛŒp[Q—© á`?|İ'Èç_DYh<¿}<ÄtkÆP$°ğ"‚kÈ†P´/ÄØÔ£›èAt‰6­-ÚbÁ(ñiN‰+tjfÕT ÷(˜|¼:kÿÎµ?êÌ"şÅ'ÁŸû[ñ\ÛúU
+
+	@.git/objects/c4/8431fb750e5a2e82af23907c78f4476e31a76d
+
+1 
+	gx
+}Í
+	gJ
+Ã
+	gP
+İæ>ÅØRHª1I+%"èÂ¥ïÚ›zC;©±±íNı[TÅ.ÄE[P°…>No¨«¾‚7IÑËïÌù˜aÊ5¿›†±’]ÕÂ£@+3Ô(£Ó<ğ±H² æUØ÷+«„MW5c"øv(ŒÀ‚=FaÇoQ—Õ(:uj72™ ™Ofã÷¨ÿõG‹i÷y6îºÎo®¢‡a*ğAŸ½ñÉGt7Yšç—K³dòë‹Ìùğëû~0¾Š¢ĞøË#İ.¦OÉ~R¡.´< ”‹H® †8X¥²±)æÁ(™Û=F’5`q
+
+3 È,
+W
+°
+m
+]
+I
+ƒ—†¤#Õ
+EIf
+°¢âš„)
+Q
+ÿ
+H
+;&˜Ïü"ÑÃ¦ÜVù=˜ü :ï
+
+	@.git/objects/d3/78579e4db37a570921aa8917815640be45dac0
+
+1 
+	gx
+±nÂ0ı¾âU°S… *¤©•Ú¡#¿€ìà€¥ô9rœV|B×.:”… Vş¦ğ:†{‡sŸŞ½ª´
+
+2 £
+Q
+'ºJ›Ú¥ÊPªé«…Ÿ[º(‰ÌíÔĞ,ÃÆÉ-ÑC—áØh|´¯š z2¥&ù¬3ôÎHš•ºW-ğ°şÚ¯?¾·o‡ÕûÏnyü\îW€©.P:-'¶˜ü
+s
+‘&ñ‹Ò
+J
+Ï 
+U
+çİ{ì
+
+3 ]àùy¬—x*(éàô=”¶¼yHÑº:y.D÷{C`•3äy»N ü¿Ä`ş
+
+	@.git/objects/d7/d1ef29eac30fe10c4c2f21b0edf7eac633d099
+
+1 
+	gx
++)
+	gJMU044a040031Q
+ñuÕËMaHëüqYÓËfkœÀÑ¢lwC.ûüK6PEiùE¹¥9‰z• Ë×«L 1Şbêş½c…Yêg^Şø•¼PU%E™‰yé9©ƒ—+Âçùn®
+
+2 ç
+	gT
+\Õ)Şæ°ÏõÖ Ô+Ë
+
+	@.git/objects/d7/e3b976e1bd28d77ed92d35313f2b08e2504915
+
+1 
+	gx
+•Î
+	gM
+
+
+2 Â0@
+	ga
+×9Eö
+	gBI2
+™
+	gI
+ìÒ7˜æ»H[Jz{·>ximmîÚY¼ô½]<¸à1 ¸D ’ƒgˆˆ.Àj“½,]“š*Wœä P¥RI!“„+Äê(9úwİõ2}³‘ƒAû°Û][´ŞYgôÕDcÔYÏµ^şBêØ²ô¢?ãóõ‡–Õ«Ü<£
+
+	@.git/objects/dc/35619729085836b83c07a7d4c4fbb4f5926733
+
+1 
+	gx
+•
+	gK
+
+
+2 Â0@]çÙ 
+	ge
+’Ì
+	gL
+' âUò™`‰¨··WpûàÁ{¥¯ë2¬÷p‡ªE"µTñI’4 ¡J©±’‹>›=º«Ğ© 9™[BF€&+ˆ­†(Èuö&½Æ³[4÷·nöæ„‰#Í@îá8L¥¯wëÈQpäÛ+€9éÙ7ôÓh=ÇôƒÓş5?İë?Ù
+
+	@.git/objects/e0/f465c45187fa46400f8f0e43fc44fd39846d72
+
+1 
+	gx
+•Á
+	gm
+Ã0  ûÖú(
+	gHJ
+¤
+	gE
+ 2B7(,Š
+	gF
+ı°
+
+2 ‚Ì:
+M
+©
+W
+è÷€Ã
+m
+Ë2÷
+HD
+}
+w
+…Ò¤ÖŒ 2«›
+em
+ÕÆ&³
+L
+¤‚˜5M)ÜÆİ×
+i
+,ÚœÅ
+	gq
+²4 )+ 
+	gg
+²¢¨µ « æ0ŞûÏ¶Ç
+	gu
+öº=|
+g
+,Â¢< ã%}Ú¶\"2rBÊ
+
+3 ñôøëş3|=âú ïß
+W
+ø›
+A
+
+
+	@.git/objects/e4/32745735d5ca82a2c693ad7493855a32d04639
+
+1 
+	gx
++)
+	gJMU045a01
+ …€Ê’Œü¼
+	gxC
+ƒ'ûºìOµ–D4EÜí˜±•e‡ŸŞYŸÕwRf&&
+
+2 
+	gA
+®.¾®
+	gz
+¹è
+	g_
+:—ÚŞ
+N
+ªøÒ¶
+a
+Æ¯Ö÷ÅËı
+Y
+–
+TB
+¥åå–æ
+$
+ê20Y­xQÉzA›qËË7×Îß|ªª¤(31/='¤ÌßÁğJğú«ˆ•4éÚãsS ÊAÙ
+
+	@.git/objects/f4/89a53ddb6278f486b098fa85ef73a74f04a479
+
+1 
+	gx
+ËJÃ@¯)[hçd| ¸qá¢ˆÌä5±ÑÂ,
+
+2 "".ÜŠ¸(®Üˆ
+k
+ÿ¦Ôö/¬
+I
+ =
+p
+¹çpï=÷¨^ª £Vıa6,t:°¬N³bó—§éÃãï÷íäkÜ<ßÒE‘å„qRè+ÕöÓ>Ô½>&”¹Íáê¾aYÇ÷ó·g°„)ûäçu6º+©³ÏÙû ³Xn­Ãxëªå™Rzÿ{«•«'IÒëp ¨/ì¬ÍNÅ×ç9j« /d‘ø’ÁRœÊøâæˆuõA7KÏñá¾­õ*™tCè£:İ+)æ¨Nvù²–
+
+3 Á<‰Û¢
+N
+@•Ë8“8¦” ª"Ê¸˜9¡àˆr"}›û®‹E"Â1u¥ã¶/³¸aıÏf}b
+
+	@.git/objects/ff/e3cf27b0540f3fb16662b889b3ac1b8ca41372
+
+1 
+	gx
+•Î
+	gK
+
+
+2 1ÇYEæ‚TURù€ˆ[É§¢»[BÜ¿q N÷Á+Ç¶õ© üi]}Ei%Š-Ô3Hm~©3¦BŒê†ìS;æ …—
+
+3 `
+	gp
+œ
+	gm
+ äÊ.ÖÅ¶`½JŸù<†Ş»èë/s‘=0ŞÑ™K9¶›FF&>C ×µ)Ô=í—¨/}ª;e
+
+	@.git/packed-refs
+
+1 #·ck-
+»fs
+ 
+w™h
+: 
+³–ed
+ 
+fuÎy
+-peeled
+
+2 
+d7e3b976e1bd28d77ed92d35313f2b08e2504915
+ 
+	g»fs
+/
+	g»mÙes
+/
+	gÜigš
+/
+	gma¡”
+
+
+	@.git/refs/heads/master
+
+1 
+	gd7e3b976e1bd28d77ed92d35313f2b08e2504915
+
+
+	@.git/refs/remotes/origin/HEAD
+
+1 
+	g»f
+: 
+»fs
+/
+»mÙes
+/
+Üigš
+/
+ma¡”
+
+
+	@Python_100ä¾‹/.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+5 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+6 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+7 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/add.sh
+
+1 #!/
+bš
+/
+bash
+
+
+3 
+fe
+ 
+š
+ 
+	gex
+{1..100}.
+py
+
+
+5 
+ÿt
+ 
+	gsom‘hšg
+.
+	gtxt
+ >>
+$fe
+
+
+6 
+	gdÚe
+
+
+	@Python_100ä¾‹/del.sh
+
+1 #!/
+bš
+/
+bash
+
+
+3 
+fe
+ 
+š
+ 
+	gex
+{1..100}.
+py
+
+
+5 
+	g£d
+ '1,4d'
+
+6 
+	gdÚe
+
+
+	@Python_100ä¾‹/ex1.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+ex1
+.
+py
+
+
+10 
+def
+ 
+	$§nweishu
+():
+
+11 
+li¡
+ = []
+
+12 
+i
+ 
+š
+ 
+	$¿nge
+(1, 5):
+
+13 
+j
+ 
+š
+ 
+	$¿nge
+(1, 5):
+
+14 
+k
+ 
+š
+ 
+	$¿nge
+(1, 5):
+
+15 ià(
+i
+ !ğ
+j
+è
+	`ªd
+ (˜!ğ
+k
+)‡nd (j != k):
+
+16 
+s1
+ = 
+	`¡r
+(
+i
+è+ sŒ(
+j
+è+ 
+	$¡r
+(
+k
+)
+
+17 
+s2
+ = ''.
+	$još
+(
+s1
+)
+
+18 
+li¡
+.
+	$­³nd
+(
+s2
+)
+
+20 
+·ss
+
+
+21 
+	`´št
+("èƒ½ç»„æˆ{}ä¸ªäº’ä¸ç›¸åŒä¸”æ— é‡å¤æ•°å­—çš„ä¸‰ä½æ•°".
+	`fÜm©
+(
+	$Ën
+(
+li¡
+)))
+
+22 
+	`´št
+("å„æ˜¯: {}".
+	$fÜm©
+(
+li¡
+))
+
+24 
+	`§nweishu
+()
+
+	@Python_100ä¾‹/ex10.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex100.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex11.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex12.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex13.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex14.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex15.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex16.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex17.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex18.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex19.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex2.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+ex2
+.
+py
+
+
+7 ä¼ä¸šå‘æ”¾çš„å¥–é‡‘æ ¹æ®åˆ©æ¶¦ææˆã€‚åˆ©æ¶¦(
+	gI
+)ä½äºæˆ–ç­‰äº10ä¸‡å…ƒæ—¶ï¼Œå¥–é‡‘å¯æ10%ï¼›åˆ©æ¶¦é«˜äº10ä¸‡å…ƒï¼Œä½äº20ä¸‡å…ƒæ—¶ï¼Œä½äº10ä¸‡å…ƒçš„éƒ¨åˆ†æŒ‰10%ææˆï¼Œé«˜äº10ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ7.5%ï¼›20ä¸‡åˆ°40ä¸‡ä¹‹é—´æ—¶ï¼Œé«˜äº20ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ5%ï¼›40ä¸‡åˆ°60ä¸‡ä¹‹é—´æ—¶é«˜äº40ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ3%ï¼›60ä¸‡åˆ°100ä¸‡ä¹‹é—´æ—¶ï¼Œé«˜äº60ä¸‡å…ƒçš„éƒ¨åˆ†ï¼Œå¯ææˆ1.5%ï¼Œé«˜äº100ä¸‡å…ƒæ—¶ï¼Œè¶…è¿‡100ä¸‡å…ƒçš„éƒ¨åˆ†æŒ‰1%ææˆï¼Œä»é”®ç›˜è¾“å…¥å½“æœˆåˆ©æ¶¦Iï¼Œæ±‚åº”å‘æ”¾å¥–é‡‘æ€»æ•°ï¼Ÿ
+
+10 
+def
+ 
+	$jŸngjš
+():
+
+11 
+i
+ = (
+	`šput
+('è¾“å…¥å½“æœˆåˆ©æ¶¦: '))
+
+12 
+a
+ = [1000000, 600000, 400000, 200000, 100000, 0]
+
+13 
+b
+ = [0.01, 0.015, 0.03, 0.05, 0.075, 0.1]
+
+14 
+j
+ = 0
+
+15 
+no
+ 
+š
+ 
+	$¿nge
+(0, 6):
+
+16 
+i
+ > 
+a
+[
+no
+]:
+
+17 
+j
+ +ğ(
+i
+-
+a
+[
+no
+])*
+b
+[no]
+
+18 
+i
+ = 
+a
+[
+no
+]
+
+20 
+	`´št
+("åº”å‘æ”¾å¥–é‡‘: {}å…ƒ".
+	$fÜm©
+(
+j
+))
+
+22 
+	`jŸngjš
+()
+
+	@Python_100ä¾‹/ex20.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex21.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex22.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex23.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex24.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex25.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex26.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex27.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex28.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex29.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex3.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+ex3
+.
+py
+
+
+10 
+def
+ 
+	$wªquª
+():
+
+11 
+i
+ 
+š
+ 
+	$¿nge
+(1, 86):
+
+12 168 % 
+i
+ == 0:
+
+13 
+j
+ = 168 / 
+i
+
+
+14 
+i
+>
+j
+ 
+	`ªd
+ (i%2==0)‡nd (j%2==0):
+
+15 
+m
+ = (
+i
+ + 
+j
+)/2
+
+16 
+n
+ = (
+i
+ - 
+j
+)/2
+
+17 
+x
+ = (
+n
+**2) - 100
+
+18 
+	$´št
+(
+x
+)
+
+20 
+	`wªquª
+()
+
+	@Python_100ä¾‹/ex30.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex31.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex32.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex33.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex34.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex35.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex36.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex37.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex38.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex39.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex4.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+ex4
+.
+py
+
+
+10 
+def
+ 
+	$judge_day
+():
+
+11 
+y—r
+ = (
+	`šput
+('è¾“å…¥å¹´ä»½: '))
+
+12 
+mÚth
+ = (
+	`šput
+('è¾“å…¥æœˆä»½: '))
+
+13 
+day
+ = (
+	`šput
+('è¾“å…¥æ—¥æœŸ: '))
+
+14 
+diù_l
+ = {1:31,2:29,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31
+	}
+}
+
+15 
+diù_c
+ = {1:31,2:28,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31}
+
+16 
+sum_day
+ = 0
+
+18 
+mÚth
+ == 1:
+
+19 
+days_num
+ = 
+day
+
+
+20 
+´št
+("{}å¹´{}æœˆ{}æ—¥æ˜¯è¿™ä¸€å¹´çš„ç¬¬{}å¤©".
+	$fÜm©
+(
+y—r
+, 
+mÚth
+, 
+day
+, 
+days_num
+))
+
+22 ià(
+y—r
+ % 400 =ğ0è
+	`Ü
+ ((y—¸% 4 =ğ0è
+	`ªd
+ (year % 100 != 0)):
+
+23 
+	`´št
+("{}æ˜¯é—°å¹´".
+	$fÜm©
+(
+y—r
+))
+
+24 
+day
+ < 0 
+Ü
+ 
+mÚth
+ < 0 o¸mÚth > 12 o¸day > 
+diù_l
+[month]:
+
+25 
+	`´št
+("æ— æ•ˆæ—¥æœŸ: {}å¹´{}æœˆ{}æ—¥".
+	$fÜm©
+(
+y—r
+, 
+mÚth
+, 
+day
+))
+
+27 
+i
+ 
+š
+ 
+	$¿nge
+(1, 
+mÚth
+):
+
+28 
+sum_day
+ +ğ
+diù_l
+[
+i
+]
+
+29 
+days_num
+ = 
+sum_day
+ + 
+day
+
+
+30 
+	`´št
+("{}å¹´{}æœˆ{}æ—¥æ˜¯è¿™ä¸€å¹´çš„ç¬¬{}å¤©".
+	$fÜm©
+(
+y—r
+, 
+mÚth
+, 
+day
+, 
+days_num
+))
+
+32 
+	`´št
+("{}æ˜¯å¹³å¹´".
+	$fÜm©
+(
+y—r
+))
+
+33 
+day
+ < 0 
+Ü
+ 
+mÚth
+ < 0 o¸mÚth > 12 o¸day > 
+diù_c
+[month]:
+
+34 
+	`´št
+("æ— æ•ˆæ—¥æœŸ: {}å¹´{}æœˆ{}æ—¥".
+	$fÜm©
+(
+y—r
+, 
+mÚth
+, 
+day
+))
+
+36 
+i
+ 
+š
+ 
+	$¿nge
+(1, 
+mÚth
+):
+
+37 
+sum_day
+ +ğ
+diù_c
+[
+i
+]
+
+38 
+days_num
+ = 
+sum_day
+ + 
+day
+
+
+39 
+	`´št
+("{}å¹´{}æœˆ{}æ—¥æ˜¯è¿™ä¸€å¹´çš„ç¬¬{}å¤©".
+	$fÜm©
+(
+y—r
+, 
+mÚth
+, 
+day
+, 
+days_num
+))
+
+41 
+	`judge_day
+()
+
+	@Python_100ä¾‹/ex40.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex41.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex42.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex43.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex44.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex45.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex46.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex47.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex48.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex49.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex5.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+ex5
+.
+py
+
+
+7 è¾“å…¥ä¸‰ä¸ªæ•´æ•°
+	gx
+,
+	gy
+,
+	gz
+ï¼Œè¯·æŠŠè¿™ä¸‰ä¸ªæ•°ç”±å°åˆ°å¤§è¾“å‡ºã€‚
+
+10 
+def
+ 
+	$·ixu
+():
+
+11 
+x
+ = (
+	`šput
+('è¯·è¾“å…¥ç¬¬1ä¸ªæ•´æ•°: '))
+
+12 
+y
+ = (
+	`šput
+('è¯·è¾“å…¥ç¬¬2ä¸ªæ•´æ•°: '))
+
+13 
+z
+ = (
+	`šput
+('è¯·è¾“å…¥ç¬¬3ä¸ªæ•´æ•°: '))
+
+15 
+l¡
+ = [
+x
+, 
+y
+, 
+z
+]
+
+16 
+l¡
+.
+	$sÜt
+()
+
+17 
+	$´št
+(
+l¡
+)
+
+19 
+	`·ixu
+()
+
+	@Python_100ä¾‹/ex50.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex51.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex52.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex53.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex54.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex55.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex56.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex57.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex58.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex59.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex6.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+ex6
+.
+py
+
+
+10 
+def
+ 
+	$fibo
+(
+n
+):
+
+11 
+n
+ =ğ1 
+Ü
+‚ == 2:
+
+14  
+	`fibo
+(
+n
+-1) + fibo(n-2)
+
+16 
+	`´št
+(
+	$fibo
+(10))
+
+18 
+def
+ 
+	$fibÚacci
+(
+n
+):
+
+19 
+n
+ == 1:
+
+21 
+n
+ == 2:
+
+24 
+fibÚacci
+ = [1, 1]
+
+25 
+i
+ 
+š
+ 
+	$¿nge
+(2, 
+n
+):
+
+26 
+fibÚacci
+.
+	`­³nd
+(fibonacci[-1] + fibonacci[-2])
+
+27  
+fibÚacci
+
+
+29 
+	`´št
+(
+	`fibÚacci
+(10))
+
+	@Python_100ä¾‹/ex60.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex61.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex62.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex63.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex64.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex65.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex66.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex67.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex68.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex69.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex7.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex70.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex71.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex72.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex73.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex74.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex75.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex76.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex77.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex78.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex79.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex8.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex80.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex81.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex82.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex83.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex84.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex85.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex86.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex87.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex88.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex89.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex9.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex90.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex91.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex92.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex93.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex94.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex95.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex96.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex97.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex98.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/ex99.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@Python_100ä¾‹/something.txt
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+	@README.md
+
+1 
+	gmypythÚ
+
+
+4 [*
+pythÚ
+éšæ‰‹ç»ƒä¹ *](
+h‰ps
+:
+
+8 | 
+mypythÚ
+ | 
+N›
+ 
+Bow’
+ | 
+pythÚ
+ |
+
+10 ![
+pythÚ
+](
+h‰ps
+:
+
+	@cscope.files
+
+1 ./
+	ggs
+
+
+2 ./
+	gPythÚ_100
+ä¾‹/
+	gex55
+.
+	gpy
+
+
+3 ./
+	gPythÚ_100
+ä¾‹/
+	gsom‘hšg
+.
+	gtxt
+
+
+4 ./
+	gPythÚ_100
+ä¾‹/
+	gex6
+.
+	gpy
+
+
+5 ./
+	gPythÚ_100
+ä¾‹/
+	gex63
+.
+	gpy
+
+
+6 ./
+	gPythÚ_100
+ä¾‹/
+	gex65
+.
+	gpy
+
+
+7 ./
+	gPythÚ_100
+ä¾‹/
+	gex82
+.
+	gpy
+
+
+8 ./
+	gPythÚ_100
+ä¾‹/
+	gex47
+.
+	gpy
+
+
+9 ./
+	gPythÚ_100
+ä¾‹/
+	gex44
+.
+	gpy
+
+
+10 ./
+	gPythÚ_100
+ä¾‹/
+	gex34
+.
+	gpy
+
+
+11 ./
+	gPythÚ_100
+ä¾‹/
+	gex79
+.
+	gpy
+
+
+12 ./
+	gPythÚ_100
+ä¾‹/
+	gex70
+.
+	gpy
+
+
+13 ./
+	gPythÚ_100
+ä¾‹/
+	gex86
+.
+	gpy
+
+
+14 ./
+	gPythÚ_100
+ä¾‹/
+	gex99
+.
+	gpy
+
+
+15 ./
+	gPythÚ_100
+ä¾‹/
+	gex92
+.
+	gpy
+
+
+16 ./
+	gPythÚ_100
+ä¾‹/
+	gex1
+.
+	gpy
+
+
+17 ./
+	gPythÚ_100
+ä¾‹/
+	gex35
+.
+	gpy
+
+
+18 ./
+	gPythÚ_100
+ä¾‹/
+	gex28
+.
+	gpy
+
+
+19 ./
+	gPythÚ_100
+ä¾‹/
+	gex42
+.
+	gpy
+
+
+20 ./
+	gPythÚ_100
+ä¾‹/
+	gex16
+.
+	gpy
+
+
+21 ./
+	gPythÚ_100
+ä¾‹/
+	gex60
+.
+	gpy
+
+
+22 ./
+	gPythÚ_100
+ä¾‹/
+	gex87
+.
+	gpy
+
+
+23 ./
+	gPythÚ_100
+ä¾‹/
+	gex80
+.
+	gpy
+
+
+24 ./
+	gPythÚ_100
+ä¾‹/
+	gex43
+.
+	gpy
+
+
+25 ./
+	gPythÚ_100
+ä¾‹/
+	gex30
+.
+	gpy
+
+
+26 ./
+	gPythÚ_100
+ä¾‹/
+	gex38
+.
+	gpy
+
+
+27 ./
+	gPythÚ_100
+ä¾‹/
+	gex17
+.
+	gpy
+
+
+28 ./
+	gPythÚ_100
+ä¾‹/
+	gex97
+.
+	gpy
+
+
+29 ./
+	gPythÚ_100
+ä¾‹/
+	gex8
+.
+	gpy
+
+
+30 ./
+	gPythÚ_100
+ä¾‹/
+	gex23
+.
+	gpy
+
+
+31 ./
+	gPythÚ_100
+ä¾‹/
+	gex88
+.
+	gpy
+
+
+32 ./
+	gPythÚ_100
+ä¾‹/
+	gex26
+.
+	gpy
+
+
+33 ./
+	gPythÚ_100
+ä¾‹/
+	gex39
+.
+	gpy
+
+
+34 ./
+	gPythÚ_100
+ä¾‹/
+	gex59
+.
+	gpy
+
+
+35 ./
+	gPythÚ_100
+ä¾‹/
+	gex57
+.
+	gpy
+
+
+36 ./
+	gPythÚ_100
+ä¾‹/
+	gex84
+.
+	gpy
+
+
+37 ./
+	gPythÚ_100
+ä¾‹/
+	gex64
+.
+	gpy
+
+
+38 ./
+	gPythÚ_100
+ä¾‹/
+	gex100
+.
+	gpy
+
+
+39 ./
+	gPythÚ_100
+ä¾‹/
+	gex21
+.
+	gpy
+
+
+40 ./
+	gPythÚ_100
+ä¾‹/
+	gex51
+.
+	gpy
+
+
+41 ./
+	gPythÚ_100
+ä¾‹/
+	gex56
+.
+	gpy
+
+
+42 ./
+	gPythÚ_100
+ä¾‹/
+	gex37
+.
+	gpy
+
+
+43 ./
+	gPythÚ_100
+ä¾‹/
+	gex32
+.
+	gpy
+
+
+44 ./
+	gPythÚ_100
+ä¾‹/
+	gex36
+.
+	gpy
+
+
+45 ./
+	gPythÚ_100
+ä¾‹/
+	gex89
+.
+	gpy
+
+
+46 ./
+	gPythÚ_100
+ä¾‹/
+	gex31
+.
+	gpy
+
+
+47 ./
+	gPythÚ_100
+ä¾‹/
+	gex5
+.
+	gpy
+
+
+48 ./
+	gPythÚ_100
+ä¾‹/
+	gex54
+.
+	gpy
+
+
+49 ./
+	gPythÚ_100
+ä¾‹/
+	gex76
+.
+	gpy
+
+
+50 ./
+	gPythÚ_100
+ä¾‹/
+	gex15
+.
+	gpy
+
+
+51 ./
+	gPythÚ_100
+ä¾‹/
+	gex62
+.
+	gpy
+
+
+52 ./
+	gPythÚ_100
+ä¾‹/
+	gex78
+.
+	gpy
+
+
+53 ./
+	gPythÚ_100
+ä¾‹/
+	gex69
+.
+	gpy
+
+
+54 ./
+	gPythÚ_100
+ä¾‹/
+	gex58
+.
+	gpy
+
+
+55 ./
+	gPythÚ_100
+ä¾‹/
+	gex98
+.
+	gpy
+
+
+56 ./
+	gPythÚ_100
+ä¾‹/
+	gex9
+.
+	gpy
+
+
+57 ./
+	gPythÚ_100
+ä¾‹/
+	gex11
+.
+	gpy
+
+
+58 ./
+	gPythÚ_100
+ä¾‹/
+	gex24
+.
+	gpy
+
+
+59 ./
+	gPythÚ_100
+ä¾‹/
+	gex73
+.
+	gpy
+
+
+60 ./
+	gPythÚ_100
+ä¾‹/
+	gex72
+.
+	gpy
+
+
+61 ./
+	gPythÚ_100
+ä¾‹/
+	gex74
+.
+	gpy
+
+
+62 ./
+	gPythÚ_100
+ä¾‹/
+	gex50
+.
+	gpy
+
+
+63 ./
+	gPythÚ_100
+ä¾‹/
+	gex75
+.
+	gpy
+
+
+64 ./
+	gPythÚ_100
+ä¾‹/
+	gex20
+.
+	gpy
+
+
+65 ./
+	gPythÚ_100
+ä¾‹/
+	gex46
+.
+	gpy
+
+
+66 ./
+	gPythÚ_100
+ä¾‹/
+	gex13
+.
+	gpy
+
+
+67 ./
+	gPythÚ_100
+ä¾‹/
+	gex19
+.
+	gpy
+
+
+68 ./
+	gPythÚ_100
+ä¾‹/
+	gex25
+.
+	gpy
+
+
+69 ./
+	gPythÚ_100
+ä¾‹/
+	gex77
+.
+	gpy
+
+
+70 ./
+	gPythÚ_100
+ä¾‹/
+	gex41
+.
+	gpy
+
+
+71 ./
+	gPythÚ_100
+ä¾‹/
+	gex7
+.
+	gpy
+
+
+72 ./
+	gPythÚ_100
+ä¾‹/
+	gex61
+.
+	gpy
+
+
+73 ./
+	gPythÚ_100
+ä¾‹/
+	gex3
+.
+	gpy
+
+
+74 ./
+	gPythÚ_100
+ä¾‹/
+	gex18
+.
+	gpy
+
+
+75 ./
+	gPythÚ_100
+ä¾‹/
+	gex49
+.
+	gpy
+
+
+76 ./
+	gPythÚ_100
+ä¾‹/
+	gex81
+.
+	gpy
+
+
+77 ./
+	gPythÚ_100
+ä¾‹/
+	gex14
+.
+	gpy
+
+
+78 ./
+	gPythÚ_100
+ä¾‹/
+	gex4
+.
+	gpy
+
+
+79 ./
+	gPythÚ_100
+ä¾‹/
+	gex91
+.
+	gpy
+
+
+80 ./
+	gPythÚ_100
+ä¾‹/
+	gadd
+.
+	gsh
+
+
+81 ./
+	gPythÚ_100
+ä¾‹/
+	gex12
+.
+	gpy
+
+
+82 ./
+	gPythÚ_100
+ä¾‹/
+	gex71
+.
+	gpy
+
+
+83 ./
+	gPythÚ_100
+ä¾‹/
+	gex45
+.
+	gpy
+
+
+84 ./
+	gPythÚ_100
+ä¾‹/
+	gex33
+.
+	gpy
+
+
+85 ./
+	gPythÚ_100
+ä¾‹/
+	gex2
+.
+	gpy
+
+
+86 ./
+	gPythÚ_100
+ä¾‹/
+	gex93
+.
+	gpy
+
+
+87 ./
+	gPythÚ_100
+ä¾‹/
+	gd–
+.
+	gsh
+
+
+88 ./
+	gPythÚ_100
+ä¾‹/
+	gex40
+.
+	gpy
+
+
+89 ./
+	gPythÚ_100
+ä¾‹/
+	gex83
+.
+	gpy
+
+
+90 ./
+	gPythÚ_100
+ä¾‹/
+	gex53
+.
+	gpy
+
+
+91 ./
+	gPythÚ_100
+ä¾‹/
+	gex94
+.
+	gpy
+
+
+92 ./
+	gPythÚ_100
+ä¾‹/
+	gex66
+.
+	gpy
+
+
+93 ./
+	gPythÚ_100
+ä¾‹/
+	gex85
+.
+	gpy
+
+
+94 ./
+	gPythÚ_100
+ä¾‹/
+	gex29
+.
+	gpy
+
+
+95 ./
+	gPythÚ_100
+ä¾‹/
+	gex22
+.
+	gpy
+
+
+96 ./
+	gPythÚ_100
+ä¾‹/
+	gex90
+.
+	gpy
+
+
+97 ./
+	gPythÚ_100
+ä¾‹/
+	gex96
+.
+	gpy
+
+
+98 ./
+	gPythÚ_100
+ä¾‹/
+	gex52
+.
+	gpy
+
+
+99 ./
+	gPythÚ_100
+ä¾‹/.
+	gpy
+
+
+100 ./
+	gPythÚ_100
+ä¾‹/
+	gex27
+.
+	gpy
+
+
+101 ./
+	gPythÚ_100
+ä¾‹/
+	gex68
+.
+	gpy
+
+
+102 ./
+	gPythÚ_100
+ä¾‹/
+	gex48
+.
+	gpy
+
+
+103 ./
+	gPythÚ_100
+ä¾‹/
+	gex95
+.
+	gpy
+
+
+104 ./
+	gPythÚ_100
+ä¾‹/
+	gex10
+.
+	gpy
+
+
+105 ./
+	gPythÚ_100
+ä¾‹/
+	gex67
+.
+	gpy
+
+
+106 ./
+	gREADME
+.
+	gmd
+
+
+107 ./
+	gcscİe
+.
+	gfes
+
+
+108 ./.
+	gg™
+/
+	g·cked
+-
+	g»fs
+
+
+109 ./.
+	gg™
+/
+	gdesütiÚ
+
+
+110 ./.
+	gg™
+/
+	g»fs
+/
+	g»mÙes
+/
+	gÜigš
+/
+	gHEAD
+
+
+111 ./.
+	gg™
+/
+	g»fs
+/
+	gh—ds
+/
+	gma¡”
+
+
+112 ./.
+	gg™
+/
+	gšfo
+/
+	gexşude
+
+
+113 ./.
+	gg™
+/
+	ghooks
+/
+	g´e
+-
+	g»ba£
+.
+	g§m¶e
+
+
+114 ./.
+	gg™
+/
+	ghooks
+/
+	g´e
+-
+	gcomm™
+.
+	g§m¶e
+
+
+115 ./.
+	gg™
+/
+	ghooks
+/
+	g­¶y·tch
+-
+	gmsg
+.
+	g§m¶e
+
+
+116 ./.
+	gg™
+/
+	ghooks
+/
+	gcomm™
+-
+	gmsg
+.
+	g§m¶e
+
+
+117 ./.
+	gg™
+/
+	ghooks
+/
+	gpo¡
+-
+	gupd©e
+.
+	g§m¶e
+
+
+118 ./.
+	gg™
+/
+	ghooks
+/
+	g´e
+-
+	g­¶y·tch
+.
+	g§m¶e
+
+
+119 ./.
+	gg™
+/
+	ghooks
+/
+	g´•¬e
+-
+	gcomm™
+-
+	gmsg
+.
+	g§m¶e
+
+
+120 ./.
+	gg™
+/
+	ghooks
+/
+	g´e
+-
+	gpush
+.
+	g§m¶e
+
+
+121 ./.
+	gg™
+/
+	ghooks
+/
+	gupd©e
+.
+	g§m¶e
+
+
+122 ./.
+	gg™
+/
+	glogs
+/
+	g»fs
+/
+	g»mÙes
+/
+	gÜigš
+/
+	gHEAD
+
+
+123 ./.
+	gg™
+/
+	glogs
+/
+	g»fs
+/
+	gh—ds
+/
+	gma¡”
+
+
+124 ./.
+	gg™
+/
+	glogs
+/
+	gHEAD
+
+
+125 ./.
+	gg™
+/
+	gobjeùs
+/4f/4031d453afd5e1c4167483c48ab15c4cce091d
+
+126 ./.
+	gg™
+/
+	gobjeùs
+/21/5a11cc6e0b846bda02b0c080c0122d46960875
+
+127 ./.
+	gg™
+/
+	gobjeùs
+/
+	gd7
+/
+	ge3b976e1bd28d77ed92d35313f2b08e2504915
+
+
+128 ./.
+	gg™
+/
+	gobjeùs
+/
+	gd7
+/
+	gd1ef29—c30ã10c4c2f21b0edf7—c633d099
+
+
+129 ./.
+	gg™
+/
+	gobjeùs
+/
+	gff
+/
+	ge3cf27b0540f3fb16662b889b3ac1b8ÿ41372
+
+
+130 ./.
+	gg™
+/
+	gobjeùs
+/
+	gc4
+/8431fb750e5a2e82af23907c78f4476e31a76d
+
+131 ./.
+	gg™
+/
+	gobjeùs
+/64/
+	ga6bf9f5bc9a89b35a65af6ec7d00ÿ9f38f423
+
+
+132 ./.
+	gg™
+/
+	gobjeùs
+/02/3aa8e87905d02fb63384e9e02291b37d9fb3d0
+
+133 ./.
+	gg™
+/
+	gobjeùs
+/
+	gb4
+/06a14231daf0774d096ced083ce6f30c02e558
+
+134 ./.
+	gg™
+/
+	gobjeùs
+/69/8c8908ef0f251c2041290181bcaabce0772556
+
+135 ./.
+	gg™
+/
+	gobjeùs
+/
+	ge0
+/
+	gf465c45187ç46400f8f0e43fc44fd39846d72
+
+
+136 ./.
+	gg™
+/
+	gobjeùs
+/16/
+	gd0054d9216139fb5725a32961ã7b3b8c37a0f
+
+
+137 ./.
+	gg™
+/
+	gobjeùs
+/
+	ga6
+/
+	gd8c1c129ab7062dc69e49f37610a69ã7a9ÿ4
+
+
+138 ./.
+	gg™
+/
+	gobjeùs
+/2e/0eb00b9605dbe63fbf5b7683cb2c76d4e82eec
+
+139 ./.
+	gg™
+/
+	gobjeùs
+/
+	gac
+/16fded3c546286ba624388fa0755d0c7873ee3
+
+140 ./.
+	gg™
+/
+	gobjeùs
+/3f/
+	gÿ8574588258dd8898b504b81e0e2ecd4ÿbdd
+
+
+141 ./.
+	gg™
+/
+	gobjeùs
+/
+	gdc
+/35619729085836b83c07a7d4c4fbb4f5926733
+
+142 ./.
+	gg™
+/
+	gobjeùs
+/71/61b605810e009f18d5fad203f50b0178d2a445
+
+143 ./.
+	gg™
+/
+	gobjeùs
+/
+	gf4
+/89a53ddb6278f486b098fa85ef73a74f04a479
+
+144 ./.
+	gg™
+/
+	gobjeùs
+/19/
+	gb3fd4726637b32a133ed46d3c8a0a9f4d900fd
+
+
+145 ./.
+	gg™
+/
+	gobjeùs
+/3c/12570fdb443d038587e2d6678c857e93bf5e28
+
+146 ./.
+	gg™
+/
+	gobjeùs
+/82/3f9cdc20b559ecc49dbcad6d546f29611493f3
+
+147 ./.
+	gg™
+/
+	gobjeùs
+/13/
+	ge7ba65e0af0ç0d912b679fd06660378176992
+
+
+148 ./.
+	gg™
+/
+	gobjeùs
+/13/
+	gcdecc5b70228494e80988b057“18c2561ç3f
+
+
+149 ./.
+	gg™
+/
+	gobjeùs
+/30/8b7fa5e5bc58c6392db2441d1855d5e8958488
+
+150 ./.
+	gg™
+/
+	gobjeùs
+/30/3c908a820fc014afbecc9b09dc16e199132ca5
+
+151 ./.
+	gg™
+/
+	gobjeùs
+/
+	gd3
+/78579e4db37a570921aa8917815640be45dac0
+
+152 ./.
+	gg™
+/
+	gobjeùs
+/27/1196badfa948c6816596426bf0acfdca6fde9f
+
+153 ./.
+	gg™
+/
+	gobjeùs
+/66/89f8d3294a3cb55e10c5726b47310a3f6fd23c
+
+154 ./.
+	gg™
+/
+	gobjeùs
+/
+	ga7
+/
+	gaf24965433b43547f788a83665f30d0d5ç90d
+
+
+155 ./.
+	gg™
+/
+	gobjeùs
+/
+	ge4
+/32745735d5ca82a2c693ad7493855a32d04639
+
+156 ./.
+	gg™
+/
+	gobjeùs
+/4d/37af9e2631347b3cf79247d7e796f63f34530d
+
+157 ./.
+	gg™
+/
+	gobjeùs
+/45/5e3dcd82a8a8f43be80a6b6a003d8cd9d5192b
+
+158 ./.
+	gg™
+/
+	gobjeùs
+/0a/
+	geddf200902442818a13c554c5f14288a31a87b
+
+
+159 ./.
+	gg™
+/
+	gobjeùs
+/05/2a89de56e1fc37734926542c8919b87d1be614
+
+160 ./.
+	gg™
+/
+	gobjeùs
+/79/506f7f81c31511972398eda9166664f4e84026
+
+161 ./.
+	gg™
+/
+	gobjeùs
+/2f/085df22a87637a54523b77da4e81b72972f397
+
+162 ./.
+	gg™
+/
+	gobjeùs
+/65/580c5ac621e01865b482a6f2b2b69d89e4f847
+
+163 ./.
+	gg™
+/
+	gHEAD
+
+
+164 ./.
+	gg™
+/
+	gšdex
+
+
+165 ./.
+	gg™
+/
+	gcÚfig
+
+
+166 ./
+	gfÜmuÏ
+.
+	gpy
+
+
+167 ./
+	gŒŸngË
+.
+	gpy
+
+
+	@formula.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+; 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+fÜmuÏ
+.
+py
+ æ±‚è§£ä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹
+
+6 
+def
+ 
+	$fÜmuÏ
+():
+
+7 
+a
+ = (
+	`šput
+('input‡: '))
+
+8 
+b
+ = (
+	`šput
+('input b: '))
+
+9 
+c
+ = (
+	`šput
+('input c: '))
+
+11 
+d–
+ = 
+b
+**2 - 4*
+a
+*
+c
+
+
+13 
+	`´št
+("æ–¹ç¨‹ä¸º: {}x^2 + {}x + {} = 0".
+	$fÜm©
+(
+a
+, 
+b
+, 
+c
+))
+
+15 
+a
+ == 0:
+
+16 
+	`´št
+("è¿™æ˜¯ä¸€æ¬¡æ–¹ç¨‹")
+
+18 
+d–
+ > 0:
+
+19 
+x1
+ = (-
+b
+ - 
+d–
+**0.5)/(2*
+a
+)
+
+20 
+x2
+ = (-
+b
+ + 
+d–
+**0.5)/(2*
+a
+)
+
+21 
+	`´št
+("æ–¹ç¨‹æœ‰2ä¸ªä¸ç›¸ç­‰çš„å®æ ¹{}å’Œ{}".
+	$fÜm©
+(
+x1
+, 
+x2
+))
+
+22 
+–if
+ 
+d–
+ == 0:
+
+23 
+x1
+ = 
+x2
+ = (-
+b
+)/(2*
+a
+)
+
+24 
+	`´št
+("æ–¹ç¨‹æœ‰2ä¸ªç›¸ç­‰çš„å®æ ¹{}".
+	$fÜm©
+(
+x1
+))
+
+26 
+	`´št
+("æ–¹ç¨‹æ²¡æœ‰å®æ ¹")
+
+28 
+	`fÜmuÏ
+()
+
+	@tags
+
+1 !
+	g_TAG_FILE_FORMAT
+ 2 /
+ex‹nded
+ 
+	gfÜm©
+; --fÜm©=1 
+wl
+ 
+nÙ
+ 
+­³nd
+ ;"o†ines/
+
+2 !
+	g_TAG_FILE_SORTED
+ 1 /0=
+unsÜ‹d
+, 1=
+sÜ‹d
+, 2=
+fŞdÿ£
+/
+
+3 !
+_TAG_PROGRAM_AUTHOR
+ 
+D¬»n
+ 
+H›b”t
+ /
+dh›b”t
+@
+u£rs
+.
+sourûfÜge
+.
+Ãt
+/
+
+4 !
+_TAG_PROGRAM_NAME
+ 
+Exub”ªt
+ 
+Cgs
+
+
+5 !
+_TAG_PROGRAM_URL
+ 
+h‰p
+:
+
+6 !
+_TAG_PROGRAM_VERSION
+ 5.8
+
+7 
+¬—_of_ŒŸngË
+ 
+ŒŸngË
+.
+py
+ /^
+def
+ 
+	$¬—_of_ŒŸngË
+():
+$
+/;" f
+
+8 
+fibo
+ 
+PythÚ_100
+ä¾‹/
+ex6
+.
+py
+ /^
+def
+ 
+	$fibo
+(
+n
+):
+$
+/;" f
+
+9 
+fibÚacci
+ 
+PythÚ_100
+ä¾‹/
+ex6
+.
+py
+ /^
+def
+ 
+	$fibÚacci
+(
+n
+):
+$
+/;" f
+
+10 
+fÜmuÏ
+ fÜmuÏ.
+py
+ /^
+def
+ 
+	$fÜmuÏ
+():
+$
+/;" f
+
+11 
+jŸngjš
+ 
+PythÚ_100
+ä¾‹/
+ex2
+.
+py
+ /^
+def
+ 
+	$jŸngjš
+():
+$
+/;" f
+
+12 
+judge_day
+ 
+PythÚ_100
+ä¾‹/
+ex4
+.
+py
+ /^
+def
+ 
+	$judge_day
+():
+$
+/;" f
+
+13 
+·ixu
+ 
+PythÚ_100
+ä¾‹/
+ex5
+.
+py
+ /^
+def
+ 
+	$·ixu
+():
+$
+/;" f
+
+14 
+§nweishu
+ 
+PythÚ_100
+ä¾‹/
+ex1
+.
+py
+ /^
+def
+ 
+	$§nweishu
+():
+$
+/;" f
+
+15 
+wªquª
+ 
+PythÚ_100
+ä¾‹/
+ex3
+.
+py
+ /^
+def
+ 
+	$wªquª
+():
+$
+/;" f
+
+	@triangle.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 #AuthÜ: 
+N›
+ 
+Bow’
+
+
+4 #F’ame: 
+ŒŸngË
+.
+py
+ è®¡ç®—ä¸‰è§’å½¢é¢ç§¯
+
+6 
+def
+ 
+	$¬—_of_ŒŸngË
+():
+
+8 
+a
+ = (
+	`šput
+('> '))
+
+9 
+b
+ = (
+	`šput
+('> '))
+
+10 
+c
+ = (
+	`šput
+('> '))
+
+12 
+s
+ = (
+a
+ + 
+b
+ + 
+c
+)/2
+
+14 
+¬—
+ = (
+s
+*(s-
+a
+)*(s-
+b
+)*(s-
+c
+))**0.5 #æµ·ä¼¦ï¼ç§¦ä¹éŸ¶å…¬å¼
+
+15 
+	$´št
+(
+¬—
+)
+
+17 
+	`¬—_of_ŒŸngË
+()
+
+	@
+1
+.
+1
+/usr/include
+167
+4909
+.git/HEAD
+.git/config
+.git/description
+.git/hooks/applypatch-msg.sample
+.git/hooks/commit-msg.sample
+.git/hooks/post-update.sample
+.git/hooks/pre-applypatch.sample
+.git/hooks/pre-commit.sample
+.git/hooks/pre-push.sample
+.git/hooks/pre-rebase.sample
+.git/hooks/prepare-commit-msg.sample
+.git/hooks/update.sample
+.git/index
+.git/info/exclude
+.git/logs/HEAD
+.git/logs/refs/heads/master
+.git/logs/refs/remotes/origin/HEAD
+.git/objects/02/3aa8e87905d02fb63384e9e02291b37d9fb3d0
+.git/objects/05/2a89de56e1fc37734926542c8919b87d1be614
+.git/objects/0a/eddf200902442818a13c554c5f14288a31a87b
+.git/objects/13/cdecc5b70228494e80988b057ee18c2561fa3f
+.git/objects/13/e7ba65e0af0fa0d912b679fd06660378176992
+.git/objects/16/d0054d9216139fb5725a32961fe7b3b8c37a0f
+.git/objects/19/b3fd4726637b32a133ed46d3c8a0a9f4d900fd
+.git/objects/21/5a11cc6e0b846bda02b0c080c0122d46960875
+.git/objects/27/1196badfa948c6816596426bf0acfdca6fde9f
+.git/objects/2e/0eb00b9605dbe63fbf5b7683cb2c76d4e82eec
+.git/objects/2f/085df22a87637a54523b77da4e81b72972f397
+.git/objects/30/3c908a820fc014afbecc9b09dc16e199132ca5
+.git/objects/30/8b7fa5e5bc58c6392db2441d1855d5e8958488
+.git/objects/3c/12570fdb443d038587e2d6678c857e93bf5e28
+.git/objects/3f/ca8574588258dd8898b504b81e0e2ecd4cabdd
+.git/objects/45/5e3dcd82a8a8f43be80a6b6a003d8cd9d5192b
+.git/objects/4d/37af9e2631347b3cf79247d7e796f63f34530d
+.git/objects/4f/4031d453afd5e1c4167483c48ab15c4cce091d
+.git/objects/64/a6bf9f5bc9a89b35a65af6ec7d00ca9f38f423
+.git/objects/65/580c5ac621e01865b482a6f2b2b69d89e4f847
+.git/objects/66/89f8d3294a3cb55e10c5726b47310a3f6fd23c
+.git/objects/69/8c8908ef0f251c2041290181bcaabce0772556
+.git/objects/71/61b605810e009f18d5fad203f50b0178d2a445
+.git/objects/79/506f7f81c31511972398eda9166664f4e84026
+.git/objects/82/3f9cdc20b559ecc49dbcad6d546f29611493f3
+.git/objects/a6/d8c1c129ab7062dc69e49f37610a69fe7a9ca4
+.git/objects/a7/af24965433b43547f788a83665f30d0d5fa90d
+.git/objects/ac/16fded3c546286ba624388fa0755d0c7873ee3
+.git/objects/b4/06a14231daf0774d096ced083ce6f30c02e558
+.git/objects/c4/8431fb750e5a2e82af23907c78f4476e31a76d
+.git/objects/d3/78579e4db37a570921aa8917815640be45dac0
+.git/objects/d7/d1ef29eac30fe10c4c2f21b0edf7eac633d099
+.git/objects/d7/e3b976e1bd28d77ed92d35313f2b08e2504915
+.git/objects/dc/35619729085836b83c07a7d4c4fbb4f5926733
+.git/objects/e0/f465c45187fa46400f8f0e43fc44fd39846d72
+.git/objects/e4/32745735d5ca82a2c693ad7493855a32d04639
+.git/objects/f4/89a53ddb6278f486b098fa85ef73a74f04a479
+.git/objects/ff/e3cf27b0540f3fb16662b889b3ac1b8ca41372
+.git/packed-refs
+.git/refs/heads/master
+.git/refs/remotes/origin/HEAD
+Python_100ä¾‹/.py
+Python_100ä¾‹/add.sh
+Python_100ä¾‹/del.sh
+Python_100ä¾‹/ex1.py
+Python_100ä¾‹/ex10.py
+Python_100ä¾‹/ex100.py
+Python_100ä¾‹/ex11.py
+Python_100ä¾‹/ex12.py
+Python_100ä¾‹/ex13.py
+Python_100ä¾‹/ex14.py
+Python_100ä¾‹/ex15.py
+Python_100ä¾‹/ex16.py
+Python_100ä¾‹/ex17.py
+Python_100ä¾‹/ex18.py
+Python_100ä¾‹/ex19.py
+Python_100ä¾‹/ex2.py
+Python_100ä¾‹/ex20.py
+Python_100ä¾‹/ex21.py
+Python_100ä¾‹/ex22.py
+Python_100ä¾‹/ex23.py
+Python_100ä¾‹/ex24.py
+Python_100ä¾‹/ex25.py
+Python_100ä¾‹/ex26.py
+Python_100ä¾‹/ex27.py
+Python_100ä¾‹/ex28.py
+Python_100ä¾‹/ex29.py
+Python_100ä¾‹/ex3.py
+Python_100ä¾‹/ex30.py
+Python_100ä¾‹/ex31.py
+Python_100ä¾‹/ex32.py
+Python_100ä¾‹/ex33.py
+Python_100ä¾‹/ex34.py
+Python_100ä¾‹/ex35.py
+Python_100ä¾‹/ex36.py
+Python_100ä¾‹/ex37.py
+Python_100ä¾‹/ex38.py
+Python_100ä¾‹/ex39.py
+Python_100ä¾‹/ex4.py
+Python_100ä¾‹/ex40.py
+Python_100ä¾‹/ex41.py
+Python_100ä¾‹/ex42.py
+Python_100ä¾‹/ex43.py
+Python_100ä¾‹/ex44.py
+Python_100ä¾‹/ex45.py
+Python_100ä¾‹/ex46.py
+Python_100ä¾‹/ex47.py
+Python_100ä¾‹/ex48.py
+Python_100ä¾‹/ex49.py
+Python_100ä¾‹/ex5.py
+Python_100ä¾‹/ex50.py
+Python_100ä¾‹/ex51.py
+Python_100ä¾‹/ex52.py
+Python_100ä¾‹/ex53.py
+Python_100ä¾‹/ex54.py
+Python_100ä¾‹/ex55.py
+Python_100ä¾‹/ex56.py
+Python_100ä¾‹/ex57.py
+Python_100ä¾‹/ex58.py
+Python_100ä¾‹/ex59.py
+Python_100ä¾‹/ex6.py
+Python_100ä¾‹/ex60.py
+Python_100ä¾‹/ex61.py
+Python_100ä¾‹/ex62.py
+Python_100ä¾‹/ex63.py
+Python_100ä¾‹/ex64.py
+Python_100ä¾‹/ex65.py
+Python_100ä¾‹/ex66.py
+Python_100ä¾‹/ex67.py
+Python_100ä¾‹/ex68.py
+Python_100ä¾‹/ex69.py
+Python_100ä¾‹/ex7.py
+Python_100ä¾‹/ex70.py
+Python_100ä¾‹/ex71.py
+Python_100ä¾‹/ex72.py
+Python_100ä¾‹/ex73.py
+Python_100ä¾‹/ex74.py
+Python_100ä¾‹/ex75.py
+Python_100ä¾‹/ex76.py
+Python_100ä¾‹/ex77.py
+Python_100ä¾‹/ex78.py
+Python_100ä¾‹/ex79.py
+Python_100ä¾‹/ex8.py
+Python_100ä¾‹/ex80.py
+Python_100ä¾‹/ex81.py
+Python_100ä¾‹/ex82.py
+Python_100ä¾‹/ex83.py
+Python_100ä¾‹/ex84.py
+Python_100ä¾‹/ex85.py
+Python_100ä¾‹/ex86.py
+Python_100ä¾‹/ex87.py
+Python_100ä¾‹/ex88.py
+Python_100ä¾‹/ex89.py
+Python_100ä¾‹/ex9.py
+Python_100ä¾‹/ex90.py
+Python_100ä¾‹/ex91.py
+Python_100ä¾‹/ex92.py
+Python_100ä¾‹/ex93.py
+Python_100ä¾‹/ex94.py
+Python_100ä¾‹/ex95.py
+Python_100ä¾‹/ex96.py
+Python_100ä¾‹/ex97.py
+Python_100ä¾‹/ex98.py
+Python_100ä¾‹/ex99.py
+Python_100ä¾‹/something.txt
+README.md
+cscope.files
+formula.py
+tags
+triangle.py
